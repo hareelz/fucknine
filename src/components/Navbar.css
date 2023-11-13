@@ -1,0 +1,12 @@
+.link-nav {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: black;
+}
+
+.navbar {
+  z-index: 5;
+  position: absolute;
+}
