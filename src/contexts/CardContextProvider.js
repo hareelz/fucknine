@@ -60,5 +60,6 @@ const CardContextProvider = ({ children }) => {
     saveChanges,
   };
   return <cardContext.Provider value={values}>{children}</cardContext.Provider>;
+};
 
 export default CardContextProvider;

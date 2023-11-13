@@ -3,9 +3,8 @@ import "../Navbar.css";
 
 const Content = () => {
   return (
-    <div className="content" style={{}}>
+    <div className="contentHome">
       <div>
-        jsaaosnasdsdbimg
         <img src="https://cdn-mk1.mortalkombat.com/home/sigil.webp" alt="" />
       </div>
       <div>
