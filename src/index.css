@@ -12,8 +12,45 @@ s code {
     monospace;
 }
 /* font-family: 'Roboto Slab', serif; */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ! admin page */
+.admin-page {
+  position: absolute;
+  top: 0;
+  background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.admin-page-inp {
+  background-color: aliceblue;
+  opacity: 0.7;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+.admin-page-title {
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+.admin-page-btn {
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  width: 30%;
+  margin: 20px 16rem;
+  font-size: 20px;
+  padding: 15px;
+}
+
+/* ! admin page */
+/* ! card page */
+.cardList-page {
+  position: absolute;
+  top: 0;
+  background: url("https://cdn-mk1.mortalkombat.com/purchase/purchase-page-bg-1600.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }

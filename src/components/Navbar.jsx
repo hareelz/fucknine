@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
-      className="navbar"
+      className="nav-bcg"
       style={{
         width: "90vw",
         height: "80px",
@@ -14,12 +14,6 @@ const Navbar = () => {
         alignItems: "center",
       }}
     >
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mortalkombat-logo.svg/2560px-Mortalkombat-logo.svg.png"
-        alt=""
-        width={"20%"}
-        href="/"
-      />
       <ul
         style={{
           listStyleType: "none",
@@ -28,33 +22,41 @@ const Navbar = () => {
           display: "flex",
           alignItems: "center",
           gap: "5%",
-          width: "100%",
+          zIndex: "5",
+          width: "95%",
         }}
       >
+        <a href="/" className="logo-home">
+          <img
+            src="https://cdn-mk1.mortalkombat.com/static/logo-blue.svg"
+            alt=""
+            width={"100%"}
+          />
+        </a>
         <li className="nav-list">
           <Link to={"/gameInfo"} className="link-nav">
             Game-Info
           </Link>
         </li>
         <li className="nav-list">
-          <a className="link-nav" href="roster">
+          <Link to={"/roster"} className="link-nav">
             Roster
-          </a>
+          </Link>
         </li>
         <li className="nav-list">
-          <a className="link-nav" href="">
+          <Link to={"/card"} className="link-nav">
             Buy Games
-          </a>
+          </Link>
         </li>
         <li className="nav-list">
-          <a className="link-nav" href="">
+          <Link to={"/admin"} className="link-nav">
             Admin
-          </a>
+          </Link>
         </li>
         <li className="nav-list">
-          <a className="link-nav" href="">
+          <Link to={"/cartPage"} className="link-nav">
             Cart
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
