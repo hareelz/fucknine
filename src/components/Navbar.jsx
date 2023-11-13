@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
+      className="navbar"
       style={{
         width: "90vw",
         height: "80px",
@@ -13,22 +14,23 @@ const Navbar = () => {
         alignItems: "center",
       }}
     >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mortalkombat-logo.svg/2560px-Mortalkombat-logo.svg.png"
+        alt=""
+        width={"20%"}
+        href="/"
+      />
       <ul
         style={{
           listStyleType: "none",
-          margin: 0,
+          margin: "0 8em",
           padding: 0,
           display: "flex",
           alignItems: "center",
           gap: "5%",
+          width: "100%",
         }}
       >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mortalkombat-logo.svg/2560px-Mortalkombat-logo.svg.png"
-          alt=""
-          width={"20%"}
-          href="/"
-        />
         <li className="nav-list">
           <Link to={"/gameInfo"} className="link-nav">
             Game-Info

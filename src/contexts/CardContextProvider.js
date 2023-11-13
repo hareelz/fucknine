@@ -1,7 +1,7 @@
 import React from "react";
 
 const CardContextProvider = () => {
-  return <div>CardContextProvider</div>;
+  return <div></div>;
 };
 
 export default CardContextProvider;
