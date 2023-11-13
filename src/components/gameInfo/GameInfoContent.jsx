@@ -1,14 +1,13 @@
 import React from "react";
-import VideoFireLine from "../assets/fire-line-bot-loop.mp4";
-import VideoFireLine2 from "../assets/fire-line-top-loop.mp4";
-const Content = () => {
+
+const GameInfoContent = () => {
   return (
     <div>
       <div className="content__block">
         <div className="fire-block">
           <video
             className="content_block__fire-bot"
-            src={VideoFireLine}
+            src="https://cdn-mk1.mortalkombat.com/static/fire-line-bot-loop.mp4"
             autoPlay
             loop
             playsInline
@@ -35,7 +34,7 @@ const Content = () => {
         <div className="fire-block-2">
           <video
             className="content_block__fire-top"
-            src={VideoFireLine2}
+            src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4"
             autoPlay
             loop
             playsInline
@@ -46,4 +45,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default GameInfoContent;

@@ -1,5 +1,4 @@
 import React from "react";
-import KombatPack from "../../assets/kombat-pack.mp4";
 
 const MainBlock = () => {
   return (
@@ -21,7 +20,7 @@ const MainBlock = () => {
         <span className="kombat-pack__block">
           <video
             className="kombat-pack__video"
-            src={KombatPack}
+            src="https://cdn-mk1.mortalkombat.com/media/kombat-pack.mp4"
             autoPlay
             loop
             playsInline
