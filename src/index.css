@@ -1,18 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+s code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 /* font-family: 'Roboto Slab', serif; */
+
 /* ! admin page */
 .admin-page {
   position: absolute;
@@ -56,4 +57,4 @@ border-radius: 10px;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-}
+
