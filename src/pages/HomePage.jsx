@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/homePage/Header";
+import Content from "../components/homePage/Content";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <Header />
+      <Content />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
