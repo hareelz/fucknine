@@ -3,9 +3,16 @@
     {
       "title": "12",
       "description": "qweqwe",
-      "image": "wqeqwe",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2418/Ul5Zx1khEvcJ1J8AEnhLvnow.png",
       "price": 123,
       "id": 1
+    },
+    {
+      "title": "qwe",
+      "description": "qweqweqweqwe",
+      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "price": 123,
+      "id": 2
     }
   ]
 }
