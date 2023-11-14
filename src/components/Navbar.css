@@ -12,38 +12,38 @@
 }
 
 .videoMk {
-    position: absolute;
-    width: 100vw;
-    top: 0;
-    z-index: 3
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  z-index: 3;
 }
 .fire {
-    position:absolute;
-    top: 16em;
-    left: -10px;
-    width: 100vw;
-    height: 50em;
-    display: block;
-    mix-blend-mode: screen;
-    margin: -6.9rem 0;
-    z-index: 10;
-    pointer-events: none;
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    width: 120em;
-    margin: -6% 0 0;
+  position: absolute;
+  top: 16em;
+  left: -10px;
+  width: 100vw;
+  height: 50em;
+  display: block;
+  mix-blend-mode: screen;
+  margin: -6.9rem 0;
+  z-index: 10;
+  pointer-events: none;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  width: 120em;
+  margin: -6% 0 0;
 }
-.content {
-    position: absolute;
-    top: 34rem;
-    z-index: 4;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background: url('https://cdn-mk1.mortalkombat.com/static/paper-alternative-fill.jpg');
+.contentHome {
+  position: absolute;
+  top: 34rem;
+  z-index: 4;
+  left: 0;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url("https://cdn-mk1.mortalkombat.com/static/paper-alternative-fill.jpg");
 }

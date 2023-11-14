@@ -14,12 +14,6 @@ const Navbar = () => {
         alignItems: "center",
       }}
     >
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mortalkombat-logo.svg/2560px-Mortalkombat-logo.svg.png"
-        alt=""
-        width={"20%"}
-        href="/"
-      />
       <ul
         style={{
           listStyleType: "none",
