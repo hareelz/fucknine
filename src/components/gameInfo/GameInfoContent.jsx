@@ -10,26 +10,27 @@ const GameInfoContent = () => {
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-bot-loop.mp4"
             autoPlay
             loop
+            // muted
             playsInline
           ></video>
         </div>
 
         <div className="fire-img-block-bot">
-          <img
+          {/* <img
             className="fire-top-img-bot"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-v2.webp"
             alt=""
-          />
+          /> */}
         </div>
 
         <div className="game-info_block__content"></div>
 
         <div className="fire-img-block-top">
-          <img
+          {/* <img
             className="fire-top-img-top"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-v1.webp"
             alt=""
-          />
+          /> */}
         </div>
         <div className="fire-block-2">
           <video

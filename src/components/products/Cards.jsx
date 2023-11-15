@@ -3,18 +3,25 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { useCart } from "../../contexts/CartContextProvider";
+
 import { IconButton } from "@mui/material";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useNavigate } from "react-router-dom";
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
+  const { addCardToCart, checkCardInCart } = useCart();
   const navigate = useNavigate();
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <Card sx={{ width: "calc(33.333% - 1vw)", margin: "0 10px", height: 500 }}>
       <CardMedia sx={{ height: 250 }} image={item.image} title="green iguana" />
@@ -36,7 +43,13 @@ export default function Cards({ item }) {
         <IconButton onClick={() => navigate(`/edit/${item.id}`)}>
           <EditIcon />
         </IconButton>
-        <IconButton>
+        <IconButton
+          sx={{
+            backgroundColor: checkCardInCart(item.id) ? "black" : "",
+            color: checkCardInCart(item.id) ? "white" : "",
+          }}
+          onClick={() => addCardToCart(item)}
+        >
           <LocalMallIcon />
         </IconButton>
       </CardActions>

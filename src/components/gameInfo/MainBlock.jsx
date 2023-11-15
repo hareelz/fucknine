@@ -18,13 +18,16 @@ const MainBlock = () => {
           </h2>
         </span>
         <span className="kombat-pack__block">
-          <video
-            className="kombat-pack__video"
-            src="https://cdn-mk1.mortalkombat.com/media/kombat-pack.mp4"
-            autoPlay
-            loop
-            playsInline
-          ></video>
+          <div className="bg-kombat-pack">
+            <video
+              className="kombat-pack__video"
+              src="https://cdn-mk1.mortalkombat.com/media/kombat-pack.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+            ></video>
+          </div>
         </span>
       </div>
       <div className="game-info__main-block"></div>
