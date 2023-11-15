@@ -6,7 +6,8 @@ import { useParams } from "react-router-dom";
 import CategorySelect from "./CategorySelect";
 
 const EditCard = () => {
-  const { getOneCard, oneCard, saveChanges, categories } = useCards();
+  const { getOneCard, oneCard, saveChanges, categories, getCategories } =
+    useCards();
   const [card, setCard] = useState({
     title: "",
     category: "",
@@ -18,6 +19,7 @@ const EditCard = () => {
 
   useEffect(() => {
     getOneCard(id);
+    getCategories();
   }, []);
 
   useEffect(() => {
@@ -87,7 +89,11 @@ const EditCard = () => {
           className="admin-page-inp"
           sx={{ mb: "15px" }}
         />
-        <CategorySelect handleInput={handleInput} categories={categories} />
+        <CategorySelect
+          card={card}
+          handleInput={handleInput}
+          categories={categories}
+        />
         <button
           className="admin-page-btn"
           onClick={() => saveChanges(id, card)}

@@ -7,6 +7,22 @@
       "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcUFBUYGBcZGh4aGhoaGhwgGh0dGh4ZGR4gHRwdICwjHB4pIBoZJTYkKy0yMzUzHSI4PjgwPSwyMy8BCwsLDw4PGRISGTIgIikyMjI1LzIyMjIyMjIyMi80Mi89MjIyNy8yMjgyMjIyNDI1NDMyMzIyOjIyMjIyLzIvL//AABEIAO0A1AMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgQFAQMHAgj/xAA9EAACAQMCBAQEBQIFBAEFAAABAhEAAyESMQQFQVEGImFxEzKBkUKhscHwUtEHI3Lh8RQVM2KiFiRDgsL/xAAaAQEBAQEBAQEAAAAAAAAAAAAAAQIDBAUG/8QALBEAAgIBAwIEBgIDAAAAAAAAAAECEQMEIUESMQUiUWETMnGBkcGx4RQjJP/aAAwDAQACEQMRAD8A6F4i8RLw50TDESSRsOhHQ/Wo/KvEYuiRcRvTHXaNj6Urf4g8DN43AgcnAA1EQO4BxB6iN6h8h5Eht/EuAF3GYwAOgEfrUckjcY2dUt8cp3x+lSUcESCD7Vz2LtuPh3WYKI0tkmNpY5nbNW3Bc2l9A1BgAZgxnue4qKSYcGhtoqqs8y04fbv/AHFWqkESNjWjAUUEitL8Qg3bYT9s77UBuopS5n4naYshdPR2zI6nMACA+5k6elU3B+L7jag7iFicATgA7dJnI99th6oaPLONpHRqxqHcUocJzS3dJ8yq8xDHcSYiYzv2/Spt63c82YXoOo75q0cZ45QdSVDECDsQazSbct3NYB21Cd8iNvc+nY1MPFvaUsxYBesyDOwg7HMUoyotukMworlXOvFfEG4At34agAkAiBkDcL0MH17VO8P+LrpYIys4wDq7xgBo3MHBnM+9ZtHsl4fljDq2+h0eio/DcYlwAowIIkdD9jW53CiSYHc1TwtUeqg8XzW2jaCZbsKi8VzAtKphYyep/",
       "price": 123,
       "id": 1
+    },
+    {
+      "title": "ewrwe",
+      "category": "wuqegr8qwiuo",
+      "description": "qweqwe",
+      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "price": 123,
+      "id": 2
+    },
+    {
+      "title": "qweqw",
+      "category": "mobile",
+      "description": "121212",
+      "image": "wqewqe",
+      "price": 12321,
+      "id": 3
     }
   ],
   "categories": [
