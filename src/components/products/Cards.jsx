@@ -12,6 +12,7 @@ import { useCart } from "../../contexts/CartContextProvider";
 import { IconButton } from "@mui/material";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useNavigate } from "react-router-dom";
+import "../../index.css";
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
@@ -23,7 +24,14 @@ export default function Cards({ item }) {
   const handleClose = () => setOpen(false);
 
   return (
-    <Card sx={{ width: "calc(33.333% - 1vw)", margin: "0 10px", height: 500 }}>
+    <Card
+      sx={{
+        width: "calc(32% - 1vw)",
+        margin: "0 10px",
+        height: 500,
+      }}
+      className="cards"
+    >
       <CardMedia sx={{ height: 250 }} image={item.image} title="green iguana" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

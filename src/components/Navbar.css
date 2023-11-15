@@ -1,9 +1,17 @@
 .link-nav {
   text-decoration: none;
-  font-family: "Roboto Slab", serif;
-  font-size: 19px;
-  font-weight: 700;
-  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  background-color: #5767868a;
+  padding: 6px 22px;
+  border-radius: 10px;
+  clip-path: polygon(3% 0%, 85% 0%, 97% 100%, 15% 100%);
+  transition: 0.3s;
+}
+.link-nav:hover {
+  background-color: #223E6B;
 }
 
 .navbar {
@@ -31,8 +39,8 @@
   object-fit: contain;
   overflow-clip-margin: content-box;
   overflow: clip;
-  width: 120em;
   margin: -6% 0 0;
+  transform: rotate(-2deg) scale3d(1.01,1,1);
 }
 .contentHome {
   position: absolute;
@@ -46,4 +54,72 @@
   align-items: center;
   overflow: hidden;
   background: url("https://cdn-mk1.mortalkombat.com/static/paper-alternative-fill.jpg");
+
+  clip-path: polygon(
+    0%5%,
+    2% 6%,
+    4% 7%,
+    11% 11%,
+    18% 8%,
+    22% 8%,
+    26% 9%,
+    29% 8%,
+    32% 7%,
+    36% 8%,
+    42% 9%,
+    50% 8%,
+    53% 8%,
+    55% 9%,
+    58% 6%,
+    69% 7%,
+    74% 2%,
+    80% 3%,
+    86% 4%,
+    89% 4.5%,
+    91% 5%,
+    93% 5%,
+    100% 6%,
+    100% 88%,
+    98% 87.2%,
+    84% 91%,
+    79% 97%,
+    75% 97%,
+    70% 95%,
+    64% 94%,
+    59% 91.4%,
+    57% 92%,
+    52% 95%,
+    51% 95%,
+    43.6% 94.5%,
+    42% 96%,
+    38% 95%,
+    30% 95%,
+    24.7% 93%,
+    20% 94%,
+    17.4% 95%,
+    13.5% 93%,
+    12% 93%,
+    8.5% 94.7%,
+    6% 95%,
+    0% 90%
+  );
+  
+}
+
+.fire-combat-pack {
+  position: absolute;
+  top: 67rem;
+  left: -10px;
+  width: 100vw;
+  height: 50em;
+  display: block;
+  mix-blend-mode: screen;
+  margin: -6.9rem 0;
+  z-index: 10;
+  pointer-events: none;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  margin: -6% 0 0;
+  transform: rotate(-2deg) scale3d(1.01,1,1);
 }

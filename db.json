@@ -1,11 +1,110 @@
 {
   "cards": [
     {
-      "title": "qwe",
-      "description": "qweqweqweqwe",
+      "title": "ert",
+      "category": "Play Station 4",
+      "description": "h",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcUFBUYGBcZGh4aGhoaGhwgGh0dGh4ZGR4gHRwdICwjHB4pIBoZJTYkKy0yMzUzHSI4PjgwPSwyMy8BCwsLDw4PGRISGTIgIikyMjI1LzIyMjIyMjIyMi80Mi89MjIyNy8yMjgyMjIyNDI1NDMyMzIyOjIyMjIyLzIvL//AABEIAO0A1AMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgQFAQMHAgj/xAA9EAACAQMCBAQEBQIFBAEFAAABAhEAAyESMQQFQVEGImFxEzKBkUKhscHwUtEHI3Lh8RQVM2KiFiRDgsL/xAAaAQEBAQEBAQEAAAAAAAAAAAAAAQIDBAUG/8QALBEAAgIBAwIEBgIDAAAAAAAAAAECEQMEIUESMQUiUWETMnGBkcGx4RQjJP/aAAwDAQACEQMRAD8A6F4i8RLw50TDESSRsOhHQ/Wo/KvEYuiRcRvTHXaNj6Urf4g8DN43AgcnAA1EQO4BxB6iN6h8h5Eht/EuAF3GYwAOgEfrUckjcY2dUt8cp3x+lSUcESCD7Vz2LtuPh3WYKI0tkmNpY5nbNW3Bc2l9A1BgAZgxnue4qKSYcGhtoqqs8y04fbv/AHFWqkESNjWjAUUEitL8Qg3bYT9s77UBuopS5n4naYshdPR2zI6nMACA+5k6elU3B+L7jag7iFicATgA7dJnI99th6oaPLONpHRqxqHcUocJzS3dJ8yq8xDHcSYiYzv2/Spt63c82YXoOo75q0cZ45QdSVDECDsQazSbct3NYB21Cd8iNvc+nY1MPFvaUsxYBesyDOwg7HMUoyotukMworlXOvFfEG4At34agAkAiBkDcL0MH17VO8P+LrpYIys4wDq7xgBo3MHBnM+9ZtHsl4fljDq2+h0eio/DcYlwAowIIkdD9jW53CiSYHc1TwtUeqg8XzW2jaCZbsKi8VzAtKphYyep/",
+      "price": 123,
+      "id": 1
+    },
+    {
+      "title": "ewrwe",
+      "category": "wuqegr8qwiuo",
+      "description": "qweqwe",
       "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
       "price": 123,
       "id": 2
+    },
+    {
+      "title": "qweqw",
+      "category": "mobile",
+      "description": "121212",
+      "image": "wqewqe",
+      "price": 12321,
+      "id": 3
+    },
+    {
+      "title": "Mortal Kombat",
+      "category": "Play Station 5",
+      "description": "Game TOP",
+      "image": "data:image/jpeg;base64,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",
+      "price": 2000,
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "name": "Play Station 5",
+      "id": 1
+    },
+    {
+      "name": "Play Station 4",
+      "id": 2
+    },
+    {
+      "name": "Play Station 3",
+      "id": 3
+    },
+    {
+      "name": "PC",
+      "id": 4
+    },
+    {
+      "name": "mobile",
+      "id": 5
+    }
+  ],
+  "roster": [
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/liu-kang/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/liu-kang/hero.webp",
+      "slog": "SECURITY",
+      "name": "LIU KANG",
+      "fam": "God of Fire",
+      "desc": "Having won control of the Hourglass, Liu Kang restarted history. He neutralized the threats and dangers that had come before, crafting a New Era in which all beings would have the opportunity to find peace.",
+      "desc2": "But that peace is now threatened by an enemy that Liu Kang could never have anticipated. It will take all of his wisdom and experience to save not only Earthrealm, but all of reality.",
+      "id": 1
+    },
+    {
+      "icon": "",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/sub-zero/thumb.webp",
+      "slog": "POWER",
+      "name": "SUB-ZERO",
+      "fam": "Grandmaster of the Lin Kuei",
+      "desc": "As the Lin Kuei's Grandmaster, Sub-Zero leads his ancient warrior clan in the defense of Earthrealm from external threats. For centuries, it has been their solemn task.",
+      "desc2": "But Earthrealm hasn’t been threatened in generations, and Sub-Zero sees no point in limiting his clan to preparing for dangers that may never come. Under his leadership, the Lin Kuei will come out of the shadows and fight for its place as one of Earthrealm’s great nations.",
+      "id": 2
+    },
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/scorpion/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/scorpion/hero.webp",
+      "slog": "HONOR",
+      "name": "SCORPION",
+      "fam": "Revered Lin Kuei Warrior",
+      "desc": "Like his cherished father, Scorpion is dedicated to the Lin Kuei and its defense of Earthrealm. When his father died, Scorpion was bereft. Though he took pride in knowing that his brother, Sub-Zero, would succeed their father as the Lin Kuei's Grandmaster.",
+      "desc2": "But Sub-Zero's unprecedented moves to cast off the Lin Kuei's traditional duties have frozen Scorpion’s enthusiasm. He fears that he may one day have to battle his brother for control of the Lin Kuei's legacy.",
+      "id": 3
+    },
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/kitana/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/kitana/hero.webp",
+      "slog": "DUTY",
+      "name": "KITANA",
+      "fam": "Princess of Outworld",
+      "desc": "Kitana has one purpose in life: to aid and protect her older sister, Mileena, as she prepares to rule Outworld one day.",
+      "desc2": "The steady-handed Kitana ignores the calls of those who advocate that she should replace her impulsive sister as heir. Instead, Kitana will defend the realm by fighting to make Mileena the best Empress possible. She will also fight to hide the dark secret that could end her sister's reign before it begins.",
+      "id": 4
+    },
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/johnny-cage/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/johnny-cage/hero.webp",
+      "slog": "VANITY",
+      "name": "JOHNNY CAGE",
+      "fam": "21st Century Action Hero",
+      "desc": "Like many stars before him, Johnny became addicted to his fame. He came to measure his self-worth by his fans' adoration and their praise of him on social media.",
+      "desc2": "But with his star now fading, Johnny is fighting an uphill battle to remain relevant. He joins Liu Kang’s Earthrealm champions hoping that it will provide his career and his fame a desperately needed boost.",
+      "id": 5
     }
   ]
 }
