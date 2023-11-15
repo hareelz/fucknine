@@ -5,6 +5,9 @@ import MainBlock from "../components/gameInfo/MainBlock";
 import GameInfoContent from "../components/gameInfo/GameInfoContent";
 import StoryContent from "../components/gameInfo/StoryContent";
 import Invasions from "../components/gameInfo/Invasions";
+import ParallaxComponent from "../components/gameInfo/ParallaxEffect";
+import BtnBuyNow from "../components/gameInfo/BtnBuyNow";
+import Footer from "../components/Footer";
 
 const GameInfo = () => {
   return (
@@ -13,7 +16,10 @@ const GameInfo = () => {
         <MainBlock />
         <GameInfoContent />
         <StoryContent />
-        <Invasions />
+        {/* <Invasions /> */}
+        <ParallaxComponent />
+        <BtnBuyNow />
+        <Footer />
       </div>
     </div>
   );
