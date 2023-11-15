@@ -1,16 +1,21 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../index.css";
 import { useCards } from "../../contexts/CardContextProvider";
+import CategorySelect from "./CategorySelect";
 
 const AddCard = () => {
-  const { addCard } = useCards();
+  const { addCard, categories, getCategories } = useCards();
   const [card, setCard] = useState({
     title: "",
+    category: "",
     description: "",
     image: "",
     price: 0,
   });
+  useEffect(() => {
+    getCategories();
+  }, []);
 
   const handleInput = (e) => {
     if (e.target.name === "price") {
@@ -22,8 +27,17 @@ const AddCard = () => {
     }
   };
   return (
-    <div>
-      <Box sx={{ width: "50vw", margin: "200px auto" }}>
+    <div className="qwe">
+      <Box
+        sx={{
+          width: "50vw",
+          height: 500,
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
         <Typography
           variant="h3"
           align="center"
@@ -39,6 +53,7 @@ const AddCard = () => {
           label="Title"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
         />
         <TextField
           onChange={handleInput}
@@ -47,6 +62,7 @@ const AddCard = () => {
           label="Description"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
         />
         <TextField
           onChange={handleInput}
@@ -56,6 +72,7 @@ const AddCard = () => {
           label="Price"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
         />
         <TextField
           onChange={handleInput}
@@ -64,7 +81,9 @@ const AddCard = () => {
           label="Image URL"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
         />
+        <CategorySelect handleInput={handleInput} categories={categories} />
         <button className="admin-page-btn" onClick={() => addCard(card)}>
           ADD GAME
         </button>
