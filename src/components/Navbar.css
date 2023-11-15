@@ -1,9 +1,17 @@
 .link-nav {
   text-decoration: none;
-  font-family: "Roboto Slab", serif;
-  font-size: 19px;
-  font-weight: 700;
-  color: black;
+  font-family: "Cinzel", serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  background-color: #5767868a;
+  padding: 6px 22px;
+  border-radius: 10px;
+  clip-path: polygon(3% 0%, 85% 0%, 97% 100%, 15% 100%);
+  transition: 0.3s;
+}
+.link-nav:hover {
+  background-color: #223E6B;
 }
 
 .navbar {
