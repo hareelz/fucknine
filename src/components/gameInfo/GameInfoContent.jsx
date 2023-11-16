@@ -10,7 +10,7 @@ const GameInfoContent = () => {
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-bot-loop.mp4"
             autoPlay
             loop
-            // muted
+            muted
             playsInline
           ></video>
         </div>
@@ -26,7 +26,7 @@ const GameInfoContent = () => {
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4"
             autoPlay
             loop
-            // muted
+            muted
             playsInline
           ></video>
         </div>

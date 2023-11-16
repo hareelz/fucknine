@@ -21,7 +21,7 @@ s code {
   background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
 }
 .qwe {
   position: absolute;
@@ -58,7 +58,6 @@ s code {
   background: url("https://cdn-mk1.mortalkombat.com/purchase/purchase-page-bg-1600.jpg");
   background-size: cover;
   width: 100vw;
-  height: 100vh;
 }
 .cards {
   background: url("https://cdn-mk1.mortalkombat.com/static/smoke-center.webp");

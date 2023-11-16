@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: "Cinzel", serif;
+  width: 100vw;
+}
+video {
+  overflow: hidden;
 }
 
 h1,
@@ -66,11 +70,10 @@ p {
   margin-top: -4em;
 }
 .game-info__main-block {
-  width: 100%;
+  width: 100vw;
   height: 50em;
   background-image: url("https://cdn-mk1.mortalkombat.com/game/kombat-pack-bg-1600.jpg");
-  background-size: 100% 55em;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
 
   opacity: 1;
@@ -79,7 +82,7 @@ p {
 
 /* ! FIRE BOTTOM STYLES */
 .content_block__fire-bot {
-  width: 100%;
+  width: 100vw;
   transform: scale3d(-1.05, 1.5, 1);
   position: absolute;
   top: 44.5em;
@@ -369,6 +372,7 @@ p {
 }
 
 .btn-buy-now__fire-top {
+  width: 100vw;
   top: 136em;
   z-index: 4;
   mix-blend-mode: screen;
@@ -376,6 +380,7 @@ p {
 }
 
 .btn-buy-now__fire-bot {
+  width: 100vw;
   top: 161.1em;
   right: 0.6em;
   z-index: 4;
