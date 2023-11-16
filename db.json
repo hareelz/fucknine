@@ -10,7 +10,7 @@
     },
     {
       "title": "ewrwe",
-      "category": "wuqegr8qwiuo",
+      "category": "PC",
       "description": "qweqwe",
       "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
       "price": 123,
@@ -18,7 +18,7 @@
     },
     {
       "title": "qweqw",
-      "category": "mobile",
+      "category": "Mobile",
       "description": "121212",
       "image": "wqewqe",
       "price": 12321,
@@ -51,7 +51,7 @@
       "id": 4
     },
     {
-      "name": "mobile",
+      "name": "Mobile",
       "id": 5
     }
   ],

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useCards } from "../../contexts/CardContextProvider";
 import { Box, Pagination } from "@mui/material";
 import Cards from "./Cards";
-import { useSearchParams } from "react-router-dom";
 import PaginationControlled from "./Pagination";
 import Filter from "../filter/Filter";
 
