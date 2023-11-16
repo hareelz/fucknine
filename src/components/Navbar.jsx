@@ -58,6 +58,11 @@ const Navbar = () => {
             Cart
           </Link>
         </li>
+        <li>
+          <Link to={"/register"}>
+            <button className="auth-btn">SIGN IN</button>
+          </Link>
+        </li>
       </ul>
     </div>
   );

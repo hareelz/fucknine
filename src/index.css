@@ -55,3 +55,17 @@ s code {
   width: 100vw;
   height: 100vh;
 }
+
+/* ! auth page  */
+.auth-page-btn {
+  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
+
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  width: 50%;
+  margin: 20px 12rem;
+  font-size: 20px;
+  padding: 15px;
+}
+/* ! auth page  */
