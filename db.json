@@ -1,18 +1,102 @@
 {
   "cards": [
     {
-      "title": "12dsfd",
-      "description": "qweqwesfsd",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2418/Ul5Zx1khEvcJ1J8AEnhLvnow.png",
+      "title": "ert",
+      "category": "Play Station 4",
+      "description": "h",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcUFBUYGBcZGh4aGhoaGhwgGh0dGh4ZGR4gHRwdICwjHB4pIBoZJTYkKy0yMzUzHSI4PjgwPSwyMy8BCwsLDw4PGRISGTIgIikyMjI1LzIyMjIyMjIyMi80Mi89MjIyNy8yMjgyMjIyNDI1NDMyMzIyOjIyMjIyLzIvL//AABEIAO0A1AMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgQFAQMHAgj/xAA9EAACAQMCBAQEBQIFBAEFAAABAhEAAyESMQQFQVEGImFxEzKBkUKhscHwUtEHI3Lh8RQVM2KiFiRDgsL/xAAaAQEBAQEBAQEAAAAAAAAAAAAAAQIDBAUG/8QALBEAAgIBAwIEBgIDAAAAAAAAAAECEQMEIUESMQUiUWETMnGBkcGx4RQjJP/aAAwDAQACEQMRAD8A6F4i8RLw50TDESSRsOhHQ/Wo/KvEYuiRcRvTHXaNj6Urf4g8DN43AgcnAA1EQO4BxB6iN6h8h5Eht/EuAF3GYwAOgEfrUckjcY2dUt8cp3x+lSUcESCD7Vz2LtuPh3WYKI0tkmNpY5nbNW3Bc2l9A1BgAZgxnue4qKSYcGhtoqqs8y04fbv/AHFWqkESNjWjAUUEitL8Qg3bYT9s77UBuopS5n4naYshdPR2zI6nMACA+5k6elU3B+L7jag7iFicATgA7dJnI99th6oaPLONpHRqxqHcUocJzS3dJ8yq8xDHcSYiYzv2/Spt63c82YXoOo75q0cZ45QdSVDECDsQazSbct3NYB21Cd8iNvc+nY1MPFvaUsxYBesyDOwg7HMUoyotukMworlXOvFfEG4At34agAkAiBkDcL0MH17VO8P+LrpYIys4wDq7xgBo3MHBnM+9ZtHsl4fljDq2+h0eio/DcYlwAowIIkdD9jW53CiSYHc1TwtUeqg8XzW2jaCZbsKi8VzAtKphYyep/",
       "price": 123,
       "id": 1
     },
     {
-      "title": "qwe",
-      "description": "qweqweqweqwe",
+      "title": "ewrwe",
+      "category": "wuqegr8qwiuo",
+      "description": "qweqwe",
       "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
       "price": 123,
       "id": 2
+    },
+    {
+      "title": "qweqw",
+      "category": "mobile",
+      "description": "121212",
+      "image": "wqewqe",
+      "price": 12321,
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "name": "Play Station 5",
+      "id": 1
+    },
+    {
+      "name": "Play Station 4",
+      "id": 2
+    },
+    {
+      "name": "Play Station 3",
+      "id": 3
+    },
+    {
+      "name": "PC",
+      "id": 4
+    },
+    {
+      "name": "mobile",
+      "id": 5
+    }
+  ],
+  "roster": [
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/liu-kang/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/liu-kang/hero.webp",
+      "slog": "SECURITY",
+      "name": "LIU KANG",
+      "fam": "God of Fire",
+      "desc": "Having won control of the Hourglass, Liu Kang restarted history. He neutralized the threats and dangers that had come before, crafting a New Era in which all beings would have the opportunity to find peace.",
+      "desc2": "But that peace is now threatened by an enemy that Liu Kang could never have anticipated. It will take all of his wisdom and experience to save not only Earthrealm, but all of reality.",
+      "id": 1
+    },
+    {
+      "icon": "",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/sub-zero/thumb.webp",
+      "slog": "POWER",
+      "name": "SUB-ZERO",
+      "fam": "Grandmaster of the Lin Kuei",
+      "desc": "As the Lin Kuei's Grandmaster, Sub-Zero leads his ancient warrior clan in the defense of Earthrealm from external threats. For centuries, it has been their solemn task.",
+      "desc2": "But Earthrealm hasn’t been threatened in generations, and Sub-Zero sees no point in limiting his clan to preparing for dangers that may never come. Under his leadership, the Lin Kuei will come out of the shadows and fight for its place as one of Earthrealm’s great nations.",
+      "id": 2
+    },
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/scorpion/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/scorpion/hero.webp",
+      "slog": "HONOR",
+      "name": "SCORPION",
+      "fam": "Revered Lin Kuei Warrior",
+      "desc": "Like his cherished father, Scorpion is dedicated to the Lin Kuei and its defense of Earthrealm. When his father died, Scorpion was bereft. Though he took pride in knowing that his brother, Sub-Zero, would succeed their father as the Lin Kuei's Grandmaster.",
+      "desc2": "But Sub-Zero's unprecedented moves to cast off the Lin Kuei's traditional duties have frozen Scorpion’s enthusiasm. He fears that he may one day have to battle his brother for control of the Lin Kuei's legacy.",
+      "id": 3
+    },
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/kitana/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/kitana/hero.webp",
+      "slog": "DUTY",
+      "name": "KITANA",
+      "fam": "Princess of Outworld",
+      "desc": "Kitana has one purpose in life: to aid and protect her older sister, Mileena, as she prepares to rule Outworld one day.",
+      "desc2": "The steady-handed Kitana ignores the calls of those who advocate that she should replace her impulsive sister as heir. Instead, Kitana will defend the realm by fighting to make Mileena the best Empress possible. She will also fight to hide the dark secret that could end her sister's reign before it begins.",
+      "id": 4
+    },
+    {
+      "icon": "https://cdn-mk1.mortalkombat.com/roster/johnny-cage/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/johnny-cage/hero.webp",
+      "slog": "VANITY",
+      "name": "JOHNNY CAGE",
+      "fam": "21st Century Action Hero",
+      "desc": "Like many stars before him, Johnny became addicted to his fame. He came to measure his self-worth by his fans' adoration and their praise of him on social media.",
+      "desc2": "But with his star now fading, Johnny is fighting an uphill battle to remain relevant. He joins Liu Kang’s Earthrealm champions hoping that it will provide his career and his fame a desperately needed boost.",
+      "id": 5
     }
   ]
 }

@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer } from "react";
-import { ACTIONS, API } from "../helpers/consts";
+import { ACTIONS, API, API_CATEGORIES } from "../helpers/consts";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -9,6 +9,7 @@ export const useCards = () => useContext(cardContext);
 const INIT_STATE = {
   cards: [],
   oneCard: null,
+  categories: [],
 };
 
 const reducer = (state = INIT_STATE, action) => {
@@ -17,6 +18,8 @@ const reducer = (state = INIT_STATE, action) => {
       return { ...state, cards: action.payload };
     case ACTIONS.GET_CARD_PRODUCT:
       return { ...state, oneCard: action.payload };
+    case ACTIONS.GET_CATEGORIES:
+      return { ...state, categories: action.payload };
     default:
       return state;
   }
@@ -49,6 +52,29 @@ const CardContextProvider = ({ children }) => {
     navigate("/card");
   };
 
+  const getCategories = async () => {
+    const res = await axios.get(API_CATEGORIES);
+    dispatch({ type: ACTIONS.GET_CATEGORIES, payload: res.data });
+  };
+
+  const createCategories = async (newCategory) => {
+    await axios.post(API_CATEGORIES, newCategory);
+    getCategories();
+  };
+
+  const fetchByParams = (query, value) => {
+    const search = new URLSearchParams(window.location.search);
+
+    if (value === "all") {
+      search.delete(query);
+    } else {
+      search.set(query, value);
+    }
+
+    const url = `${window.location.pathname}?${search.toString()}`;
+    navigate(url);
+  };
+
   const values = {
     addCard,
     getCards,
@@ -58,6 +84,12 @@ const CardContextProvider = ({ children }) => {
     getOneCard,
     oneCard: state.oneCard,
     saveChanges,
+
+    getCategories,
+    createCategories,
+    categories: state.categories,
+
+    fetchByParams,
   };
   return <cardContext.Provider value={values}>{children}</cardContext.Provider>;
 };

@@ -3,9 +3,15 @@ import {
   createUserWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
-import { createContext, useContext, useReducer, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useReducer,
+  useState,
+} from "react";
 import React from "react";
-import { auth } from "../firebase";
+import { auth, fire } from "../firebase";
 import { useNavigate } from "react-router-dom";
 
 const authContext = createContext();
@@ -46,22 +52,89 @@ export default function AuthContext({ children }) {
 
   const handleRegister = () => {
     clearError();
+    fire
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .catch((err) => {
+        switch (err.code) {
+          case "auth/email-already-in-use":
+          case "auth/invilid-email":
+            setEmailError(err.message);
+            break;
+          case "auth/weak-password":
+            setPasswordError(err.message);
+
+          default:
+            break;
+        }
+      });
   };
-  const googleProvider = new GoogleAuthProvider();
+
   const navigate = useNavigate();
+  const handleLogin = () => {
+    clearError();
+    fire
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => navigate("/"))
+      .catch((err) => {
+        switch (err.code) {
+          case "auth/user-disabled":
+          case "auth/invalid-email":
+          case "auth/user-not-found":
+            setEmailError(err.message);
+            break;
 
-  const authWithGoogle = async () => {
-    try {
-      await signInWithPopup(auth, googleProvider);
-    } catch (error) {
-      console.log(error);
-    }
+          case "auth/wrong-password":
+            setPasswordError(err.message);
+            break;
+
+          default:
+            break;
+        }
+      });
   };
 
-  const values = { register, authWithGoogle };
+  const handleLogout = () => {
+    fire.auth().signOut();
+  };
+
+  const authListener = () => {
+    fire.auth().onAuthStateChange((user) => {
+      if (user) {
+        clearInputs();
+        setUser(user);
+      } else {
+        setUser("");
+      }
+    });
+  };
+
+  useEffect(() => {
+    authListener();
+  }, []);
+
+  useEffect(() => {
+    authListener();
+  }, []);
+  const values = {
+    user,
+    email,
+    password,
+
+    emailError,
+    passwordError,
+    hasAccount,
+
+    setEmail,
+    setPassword,
+    setHasAccount,
+
+    handleRegister,
+    handleLogin,
+    handleLogout,
+  };
   //!  REGISTER FUNC
-  function register(email, password) {
-    return createUserWithEmailAndPassword(auth, email, password);
-  }
+
   return <authContext.Provider value={values}>{children}</authContext.Provider>;
 }

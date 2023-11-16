@@ -7,30 +7,29 @@ const Navbar = () => {
     <div
       className="nav-bcg"
       style={{
-        width: "90vw",
+        width: "100vw",
         height: "80px",
         margin: "auto",
         display: "flex",
-        alignItems: "center",
+        // alignItems: "center",
       }}
     >
       <ul
         style={{
           listStyleType: "none",
-          margin: "0 8em",
+          margin: "0 2em",
           padding: 0,
           display: "flex",
           alignItems: "center",
-          gap: "5%",
           zIndex: "5",
-          width: "95%",
+          width: "97%",
         }}
       >
         <a href="/" className="logo-home">
           <img
             src="https://cdn-mk1.mortalkombat.com/static/logo-blue.svg"
             alt=""
-            width={"100%"}
+            width={"88%"}
           />
         </a>
         <li className="nav-list">

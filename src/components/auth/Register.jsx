@@ -3,24 +3,36 @@ import { Alert, Box, Button, TextField, Typography } from "@mui/material";
 import { useAuth } from "../../contexts/AuthContext";
 
 export default function Register() {
-  const { authWithGoogle, register } = useAuth();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const {
+    user,
+    email,
+    password,
 
-  const handleSubmit = async (e) => {
-    try {
-      await register(email, password);
-      // setEmail("");
-      // setPassword("");
-    } catch (error) {
-      setError(error.message);
-    }
+    emailError,
+    passwordError,
+    hasAccount,
+
+    setEmail,
+    setPassword,
+    setHasAccount,
+
+    handleRegister,
+    handleLogin,
+    handleLogout,
+  } = useAuth();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get("email"),
+      password: data.get("password"),
+    });
   };
+
   return (
     <div className="admin-page">
       <Box sx={{ width: "50vw", margin: "200px auto" }}>
-        {error && <Alert severity="error">{error}</Alert>}
         <Typography
           variant="h3"
           align="center"
@@ -37,6 +49,7 @@ export default function Register() {
           label="Login"
           variant="outlined"
           className="admin-page-inp"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <TextField
@@ -45,6 +58,7 @@ export default function Register() {
           label="Password"
           variant="outlined"
           className="admin-page-inp"
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
 
@@ -52,9 +66,7 @@ export default function Register() {
           SIGN IN
         </button>
 
-        <button className="auth-page-btn" onClick={authWithGoogle}>
-          CONTINUE WITH GOOGLE
-        </button>
+        <button className="auth-page-btn">CONTINUE WITH GOOGLE</button>
       </Box>
     </div>
   );
