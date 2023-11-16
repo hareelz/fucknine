@@ -4,17 +4,22 @@
     background: linear-gradient(180deg,#b0bfd7 0%,white 100%);
     max-height: 220px;
     position: relative;
+    transition: 0.4s;
     
 }
 .LUKANG:hover{
     .Lu-Kang {
         width: 14em;
-        transition: 0.3s;
-        
+        transition: 0.4s;
+    }
+    .Liu-name {
+        background-color: #3868b6;
+        transition: 0.4s;
     }
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 3;
+    
 }
 
 .Lu-Kang {

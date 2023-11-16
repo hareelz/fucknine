@@ -1,15 +1,21 @@
 import * as React from "react";
-import Typography from "@mui/material/Typography";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import "../../index.css";
 
 export default function PaginationControlled(props) {
   const { page, handleChange, count } = props;
 
   return (
     <Stack spacing={2}>
-      <Typography>Page: {page}</Typography>
-      <Pagination count={count} page={page} onChange={handleChange} />
+      <Pagination
+        count={count}
+        page={page}
+        onChange={handleChange}
+        className="pagination"
+        showFirstButton
+        showLastButton
+      />
     </Stack>
   );
 }

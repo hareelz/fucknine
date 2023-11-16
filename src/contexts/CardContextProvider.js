@@ -36,7 +36,7 @@ const CardContextProvider = ({ children }) => {
   };
 
   const getCards = async () => {
-    const res = await axios.get(API);
+    const res = await axios.get(`${API}${window.location.search}`);
     dispatch({ type: ACTIONS.GET_CARDS, payload: res.data });
   };
 

@@ -4,13 +4,16 @@ import { Box, Pagination } from "@mui/material";
 import Cards from "./Cards";
 import { useSearchParams } from "react-router-dom";
 import PaginationControlled from "./Pagination";
+import "../../index.css";
 
 const CardList = () => {
   const { getCards, cards } = useCards();
+  const [searchParams, setSearchParams] = useSearchParams();
   useEffect(() => {
     getCards();
     setPage(1);
-  }, []);
+  }, [searchParams]);
+
   const [page, setPage] = React.useState(1);
   const handleChange = (event, value) => {
     setPage(value);
@@ -27,7 +30,7 @@ const CardList = () => {
   }
 
   return (
-    <>
+    <div className="card-list-block">
       <Box
         sx={{
           display: "flex",
@@ -44,7 +47,7 @@ const CardList = () => {
         page={page}
         handleChange={handleChange}
       />
-    </>
+    </div>
   );
 };
 
