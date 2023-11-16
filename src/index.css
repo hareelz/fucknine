@@ -61,11 +61,11 @@ s code {
   height: 100vh;
 }
 .cards {
-  background: url('https://cdn-mk1.mortalkombat.com/static/smoke-center.webp');
+  background: url("https://cdn-mk1.mortalkombat.com/static/smoke-center.webp");
 }
 
-.notFoundPage{
-  background:  url('https://steamuserimages-a.akamaihd.net/ugc/787478092106377965/22C5CC103A4563C9BC9755B5CA5F27B78C90A2F3/');
+.notFoundPage {
+  background: url("https://steamuserimages-a.akamaihd.net/ugc/787478092106377965/22C5CC103A4563C9BC9755B5CA5F27B78C90A2F3/");
   width: 100vw;
   height: 100vh;
   position: absolute;
