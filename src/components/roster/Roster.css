@@ -1,0 +1,117 @@
+.LUKANG {
+    width: 12%;
+    clip-path: polygon(25% 0%, 100% 0%, 80% 100%, 0 100%);
+    background: linear-gradient(180deg,#b0bfd7 0%,white 100%);
+    max-height: 220px;
+    position: relative;
+}
+.LUKANG:hover{
+    cursor: pointer;
+}
+
+.Lu-Kang {
+    width: 13em;
+    z-index: 0;
+}
+
+.smoke {
+    width: 13em;
+    position: absolute;
+    top: 61%;
+    left: 0%;
+    z-index: 2;
+}
+
+.Liu-name {
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+   text-align: center;
+    top: 81%;
+    left: 15%;
+
+    z-index: 3;
+    color: white;
+    padding: 2em;
+    border-radius: 5%;
+    background-color: rgb(36, 36, 36);
+    clip-path: polygon(77% 30%, 100% 50%, 77% 70%, 20% 70%, -1% 50%, 20% 30%);
+}
+
+/*! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.ModalHero {
+    background: linear-gradient(180deg, #8B9DB9 0%, #C0CAD9 36.98%, #FFF 100%);
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+}
+
+.Hero_img {
+    z-index: 2;
+    position: absolute;
+    width: 35%;
+    top: 20%;
+    left: 23%;
+}
+
+.smoke_hero_bg {
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    font-family: "Cinzel", serif;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    left: 39%;
+    gap: 5px;
+}
+
+.up_title {
+    font-family: MajestyBold,Times New Roman,serif;
+    color: #3868b6;
+    font-size: 1rem;
+    margin: 0 0 0 5px;
+    letter-spacing: 0.5em;
+
+}
+
+.name {
+    font-family: MajestyBold,Times New Roman,serif;
+    font-size: 4rem;
+    color: #223e6b;
+    margin: 0;
+}
+
+.title {
+    font-family: MajestyBold,Times New Roman,serif;
+    font-size: 2rem;
+    color: #223e6b;
+    margin: 0;
+}
+
+.first_history {
+    font-family: MajestyBold,Times New Roman,serif;
+    font-size: 1.2em;
+    margin: 0;
+    color: #223e6b;
+    width: 80%;
+}

@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer } from "react";
-import { ACTIONS, API, API_CATEGORIES } from "../helpers/consts";
+import { ACTIONS, API, API_CATEGORIES, API_ROSTERS } from "../helpers/consts";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -10,6 +10,7 @@ const INIT_STATE = {
   cards: [],
   oneCard: null,
   categories: [],
+  roster: [],
 };
 
 const reducer = (state = INIT_STATE, action) => {
@@ -20,6 +21,8 @@ const reducer = (state = INIT_STATE, action) => {
       return { ...state, oneCard: action.payload };
     case ACTIONS.GET_CATEGORIES:
       return { ...state, categories: action.payload };
+    case ACTIONS.GET_ROSTER:
+      return { ...state, roster: action.payload };
     default:
       return state;
   }
@@ -62,6 +65,11 @@ const CardContextProvider = ({ children }) => {
     getCategories();
   };
 
+  const getRoster = async () => {
+    const res = await axios.get(API_ROSTERS);
+    dispatch({ type: ACTIONS.GET_ROSTER, payload: res.data });
+  };
+
   const fetchByParams = (query, value) => {
     const search = new URLSearchParams(window.location.search);
 
@@ -90,6 +98,8 @@ const CardContextProvider = ({ children }) => {
     categories: state.categories,
 
     fetchByParams,
+    getRoster,
+    roster: state.roster,
   };
   return <cardContext.Provider value={values}>{children}</cardContext.Provider>;
 };
