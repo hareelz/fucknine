@@ -9,3 +9,9 @@ export const ACTIONS = {
   GET_CART: "GET_CART",
   GET_ROSTER: "GET_ROSTER",
 };
+
+export const ACTIONS_USER = {
+  CHECK_USER: "CHECK_USER",
+};
+
+export const ADMIN = "admin@admin.com";

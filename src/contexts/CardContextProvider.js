@@ -112,5 +112,4 @@ const CardContextProvider = ({ children }) => {
   };
   return <cardContext.Provider value={values}>{children}</cardContext.Provider>;
 };
-
 export default CardContextProvider;

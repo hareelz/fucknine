@@ -11,7 +11,7 @@
   transition: 0.3s;
 }
 .link-nav:hover {
-  background-color: #223E6B;
+  background-color: #223e6b;
 }
 
 .navbar {
@@ -40,7 +40,7 @@
   overflow-clip-margin: content-box;
   overflow: clip;
   margin: -6% 0 0;
-  transform: rotate(-2deg) scale3d(1.01,1,1);
+  transform: rotate(-2deg) scale3d(1.01, 1, 1);
 }
 .contentHome {
   position: absolute;
@@ -103,9 +103,31 @@
     6% 95%,
     0% 90%
   );
-  
 }
 
+.auth-btn {
+  height: 40px;
+  width: 10rem;
+  margin-left: 150%;
+  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
+  background: radial-gradient(
+    circle,
+    rgb(50, 98, 180) 0%,
+    rgb(17, 53, 139) 100%
+  );
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  border-style: none;
+  transition: 0.1s;
+}
+
+.auth-btn:hover {
+  clip-path: polygon(3% 50%, 11% 0%, 89% 0%, 97% 50%, 89% 100%, 11% 100%);
+  font-size: 16px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
 .fire-combat-pack {
   position: absolute;
   top: 67rem;
@@ -121,5 +143,5 @@
   overflow-clip-margin: content-box;
   overflow: clip;
   margin: -6% 0 0;
-  transform: rotate(-2deg) scale3d(1.01,1,1);
+  transform: rotate(-2deg) scale3d(1.01, 1, 1);
 }

@@ -1,32 +1,13 @@
 import * as React from "react";
 import { useCart } from "../../contexts/CartContextProvider";
-import {
-  Box,
-  Button,
-  Icon,
-  IconButton,
-  Modal,
-  Typography,
-} from "@mui/material";
+import { Button, Icon, IconButton, Box } from "@mui/material";
 import "./Cart.css";
 import DeleteIcon from "@mui/icons-material/Delete";
-const style = {
-  // position: "absolute",
-  // top: "40rem",
-  // left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
+import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const { cart, getCart, changeCardCount, deleteCardFromCart } = useCart();
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     getCart();
@@ -153,31 +134,10 @@ export default function Cart() {
           </li>
         </ul>
       ))}
-      <Button onClick={handleOpen}> BUY NOW FOR {cart.totalPrice}</Button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Typography
-            id="modal-modal-title"
-            variant="h6"
-            component="h2"
-            style={{ color: "black" }}
-          >
-            Text in a modal
-          </Typography>
-          <Typography
-            id="modal-modal-description"
-            sx={{ mt: 2 }}
-            style={{ color: "black" }}
-          >
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
-      </Modal>
+      <button onClick={() => navigate("/orderPage")}>
+        {" "}
+        BUY NOW FOR {cart.totalPrice}
+      </button>
 
       {/* <TableContainer component={Paper}>
         <Table

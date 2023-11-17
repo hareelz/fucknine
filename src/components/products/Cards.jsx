@@ -14,6 +14,8 @@ import { IconButton } from "@mui/material";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useNavigate } from "react-router-dom";
 import "../../index.css";
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { ADMIN } from "../../helpers/consts";
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
@@ -23,6 +25,8 @@ export default function Cards({ item }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const { user } = useAuth();
 
   return (
     <Card
@@ -64,20 +68,23 @@ export default function Cards({ item }) {
           {item.price}
         </Typography>
       </CardContent>
-      <CardActions
-        sx={{
+      <CardActions sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",
           height: "5rem",
-        }}
-      >
-        <IconButton onClick={() => deleteCard(item.id)}>
-          <DeleteIcon />
-        </IconButton>
-        <IconButton onClick={() => navigate(`/edit/${item.id}`)}>
-          <EditIcon />
-        </IconButton>
+        }}>
+        {user.email === ADMIN ? (
+          <>
+            <IconButton onClick={() => deleteCard(item.id)}>
+              <DeleteIcon />
+            </IconButton>
+            <IconButton onClick={() => navigate(`/edit/${item.id}`)}>
+              <EditIcon />
+            </IconButton>
+          </>
+        ) : null}
+
         <IconButton
           sx={{
             backgroundColor: checkCardInCart(item.id) ? "green" : "",

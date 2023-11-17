@@ -15,7 +15,7 @@ s code {
 /* font-family: 'Roboto Slab', serif; */
 /* ! admin page */
 .admin-page {
-  /* position: absolute; */
+  position: absolute;
   margin-top: -5.4%;
   top: 0;
   background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
@@ -35,6 +35,7 @@ s code {
   border-radius: 10px;
 }
 .admin-page-title {
+  color: black;
   opacity: 0.8;
   font-weight: 700;
   font-size: 20px;
@@ -48,6 +49,19 @@ s code {
   margin: 20px 16rem;
   font-size: 20px;
   padding: 15px;
+  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
+  background: radial-gradient(
+    circle,
+    rgb(50, 98, 180) 0%,
+    rgb(17, 53, 139) 100%
+  );
+  color: #fff;
+  border-style: none;
+  transition: 0.1s;
+}
+.admin-page-btn:hover {
+  clip-path: polygon(3% 50%, 11% 0%, 89% 0%, 97% 50%, 89% 100%, 11% 100%);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* ! admin page */
@@ -59,9 +73,37 @@ s code {
   background-size: cover;
   width: 100vw;
 }
+
+/* ! auth page  */
+.auth-page-btn {
+  color: #fff;
+  border-style: none;
+  transition: 0.1s;
+  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  width: 50%;
+  margin: 20px 12rem;
+  font-size: 20px;
+  padding: 15px;
+  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
+  background: radial-gradient(
+    circle,
+    rgb(50, 98, 180) 0%,
+    rgb(17, 53, 139) 100%
+  );
+}
+
+.auth-page-btn:hover {
+  clip-path: polygon(3% 50%, 11% 0%, 89% 0%, 97% 50%, 89% 100%, 11% 100%);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+/* ! auth page  */
 .cards {
   background: url("https://cdn-mk1.mortalkombat.com/static/smoke-center.webp");
 }
+
 .card-body {
   font-family: "Roboto Slab", serif;
 }
@@ -72,6 +114,7 @@ s code {
   font-weight: 700;
 }
 /*  */
+
 .notFoundPage {
   background: url("https://steamuserimages-a.akamaihd.net/ugc/787478092106377965/22C5CC103A4563C9BC9755B5CA5F27B78C90A2F3/");
   width: 100vw;
@@ -91,19 +134,15 @@ s code {
   left: 34.5%;
   text-align: center;
 }
-/*  */
-.category-block {
-  background: none;
-}
-/*  */
-.pagination {
+
+.auth-page {
   position: absolute;
-  font-size: 20px;
-  top: 75%;
-  left: 45%;
-}
-.card-list-block {
-  position: relative;
+  margin-top: 0;
+  top: 0;
+  background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 110vh;
 }
 /*  */
 .roster-page {
