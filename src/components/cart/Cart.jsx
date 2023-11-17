@@ -1,13 +1,8 @@
 import * as React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import { useCart } from "../../contexts/CartContextProvider";
-import { Button } from "@mui/material";
+import { Button, Icon, IconButton } from "@mui/material";
+import "./Cart.css";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function Cart() {
   const { cart, getCart, changeCardCount, deleteCardFromCart } = useCart();
@@ -22,55 +17,170 @@ export default function Cart() {
   };
 
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Picture</TableCell>
-            <TableCell align="right">Title</TableCell>
-            <TableCell align="right">Category</TableCell>
-            <TableCell align="right">Price</TableCell>
-            <TableCell align="right">Count</TableCell>
-            <TableCell align="right">SubPrice</TableCell>
-            <TableCell align="right">-</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {cart.cards.map((row) => (
-            <TableRow
-              key={row.item.id}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+    <div className="cart-list">
+      {cart.cards.map((row) => (
+        <ul
+          key={row.item.id}
+          style={{ width: "100%", margin: "auto", padding: 0 }}
+        >
+          <li
+            className="list-cart"
+            style={{
+              display: "flex",
+              gap: "140px",
+              marginBottom: "20px",
+            }}
+          >
+            <div style={{ display: "flex", width: "40%", marginLeft: "10rem" }}>
+              <img
+                src={row.item.image}
+                alt={row.item.title}
+                style={{
+                  maxWidth: "30%",
+                  width: "28%",
+                  backgroundSize: "cover",
+                }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  fontSize: "25px",
+                  fontWeight: 700,
+                  width: "60%",
+                }}
+              >
+                <h3
+                  style={{
+                    color: "black",
+                    margin: 0,
+                    padding: 0,
+                    textAlign: "center",
+                  }}
+                >
+                  {row.item.title}
+                </h3>
+                <p
+                  style={{
+                    color: "black",
+                    margin: 0,
+                    fontSize: "20px",
+                    fontWeight: 600,
+                    padding: 0,
+                    textAlign: "center",
+                  }}
+                >
+                  {row.item.category}
+                </p>
+              </div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "10px",
+              }}
             >
-              <TableCell component="th" scope="row">
-                <img src={row.item.image} alt="" width={"70"} />
-              </TableCell>
-              <TableCell align="right">{row.item.title}</TableCell>
-              <TableCell align="right">{row.item.category}</TableCell>
-              <TableCell align="right">{row.item.price}</TableCell>
-              <TableCell align="right">
-                <input
-                  onChange={(e) => changeCardCount(row.item.id, e.target.value)}
-                  type="number"
-                  value={row.count}
-                  min={1}
-                  max={20}
-                />
-              </TableCell>
-              <TableCell align="right">{row.subPrice}</TableCell>
-              <TableCell align="right">
-                <Button onClick={() => deleteCardFromCart(row.item.id)}>
-                  DELETE
-                </Button>
-              </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <Button onClick={cartCleaner}> BUY NOW FOR {cart.totalPrice}</Button>
-    </TableContainer>
+              <input
+                style={{
+                  height: "20px",
+                  padding: "10px",
+                  fontSize: "20px",
+                }}
+                onChange={(e) => changeCardCount(row.item.id, e.target.value)}
+                type="number"
+                value={row.count}
+                min={1}
+                max={10}
+              />
+            </div>
+            <p
+              style={{
+                color: "black",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontSize: "25px",
+                fontWeight: "700",
+              }}
+            >
+              {row.subPrice}KGS
+            </p>
+            <IconButton
+              sx={{
+                width: "60px",
+                marginRight: "12rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              onClick={() => deleteCardFromCart(row.item.id)}
+            >
+              <DeleteIcon
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  fontSize: "3rem",
+                  color: "black",
+                }}
+              />
+            </IconButton>
+          </li>
+        </ul>
+      ))}
+      <button onClick={cartCleaner}> BUY NOW FOR {cart.totalPrice}</button>
+
+      {/* <TableContainer component={Paper}>
+        <Table
+          sx={{
+            minWidth: 650,
+            width: "80%",
+            margin: "auto",
+          }}
+          aria-label="simple table"
+        >
+          <TableBody>
+            {cart.cards.map((row) => (
+              <TableRow
+                key={row.item.id}
+                sx={{
+                  border: "2px solid black",
+                  gap: "20px",
+                }}
+              >
+                <TableCell component="th" scope="row">
+                  <img src={row.item.image} alt="" width={"100"} />
+                </TableCell>
+                <TableCell align="right">{row.item.title}</TableCell>
+                <TableCell align="right">{row.item.category}</TableCell>
+                <TableCell align="right">{row.item.price}</TableCell>
+                <TableCell align="right">
+                  <input
+                    onChange={(e) =>
+                      changeCardCount(row.item.id, e.target.value)
+                    }
+                    type="number"
+                    value={row.count}
+                    min={1}
+                    max={20}
+                  />
+                </TableCell>
+                <TableCell align="right">{row.subPrice}</TableCell>
+                <TableCell align="right">
+                  <Button onClick={() => deleteCardFromCart(row.item.id)}>
+                    DELETE
+                  </Button>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+        <Button onClick={cartCleaner}> BUY NOW FOR {cart.totalPrice}</Button>
+      </TableContainer> */}
+    </div>
   );
 }

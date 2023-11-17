@@ -3,6 +3,7 @@ import { useCards } from "../../contexts/CardContextProvider";
 import { Box, Pagination } from "@mui/material";
 import Cards from "./Cards";
 import PaginationControlled from "./Pagination";
+import "../../index.css";
 import { useSearchParams } from "react-router-dom";
 
 const CardList = () => {
@@ -28,7 +29,7 @@ const CardList = () => {
   }
 
   return (
-    <>
+    <div className="card-list-block">
       <Box
         sx={{
           display: "flex",
@@ -45,7 +46,7 @@ const CardList = () => {
         page={page}
         handleChange={handleChange}
       />
-    </>
+    </div>
   );
 };
 

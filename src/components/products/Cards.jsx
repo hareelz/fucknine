@@ -29,6 +29,7 @@ export default function Cards({ item }) {
       sx={{
         width: "calc(32% - 1vw)",
         margin: "0 10px",
+        marginTop: "-12em",
         height: 500,
       }}
       className="cards"
@@ -39,7 +40,7 @@ export default function Cards({ item }) {
         image={item.image}
         title={item.title}
       />
-      <CardContent>
+      <CardContent sx={{ gap: "2em" }}>
         <Typography gutterBottom variant="h5" component="div">
           {item.title}
         </Typography>

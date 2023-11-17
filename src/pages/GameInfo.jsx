@@ -8,6 +8,7 @@ import Invasions from "../components/gameInfo/Invasions";
 import ParallaxComponent from "../components/gameInfo/ParallaxEffect";
 import BtnBuyNow from "../components/gameInfo/BtnBuyNow";
 import Footer from "../components/Footer";
+import "../adaptive/1440px.css";
 
 const GameInfo = () => {
   return (
@@ -16,10 +17,7 @@ const GameInfo = () => {
         <MainBlock />
         <GameInfoContent />
         <StoryContent />
-        {/* <Invasions /> */}
         <ParallaxComponent />
-        <BtnBuyNow />
-        <Footer />
       </div>
     </div>
   );
