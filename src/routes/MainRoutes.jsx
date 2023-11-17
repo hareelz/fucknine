@@ -8,6 +8,7 @@ import AdminPage from "../pages/AdminPage";
 import { Route, Routes } from "react-router-dom";
 import CardPage from "../pages/CardPage";
 import EditPage from "../pages/EditPage";
+import ModalRoster from "../components/roster/ModalRosters";
 
 const PUBLIC_ROUTES = [
   { id: 1, link: "/", element: <HomePage /> },
@@ -18,6 +19,7 @@ const PUBLIC_ROUTES = [
   { id: 5, link: "/admin", element: <AdminPage /> },
   { id: 6, link: "*", element: <NotFoundPage /> },
   { id: 7, link: "/edit/:id", element: <EditPage /> },
+  { id: 8, link: "/modal/:id", element: <ModalRoster /> },
 ];
 
 const MainRoutes = () => {

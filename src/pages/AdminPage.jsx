@@ -1,5 +1,6 @@
 import React from "react";
 import AddCard from "../components/products/AddCard";
+import "../index.css";
 
 const AdminPage = () => {
   return (
