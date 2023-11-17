@@ -96,3 +96,11 @@ s code {
 .card-list-block {
   position: relative;
 }
+/*  */
+.roster-page {
+  position: absolute;
+  top: 0;
+  background: url('https://cdn-mk1.mortalkombat.com/purchase/purchase-edition-bg.jpg');
+  width: 100vw;
+  height: 100vh;
+}

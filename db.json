@@ -2,11 +2,75 @@
   "cards": [
     {
       "title": "Mortal Kombat 3 ulrimate",
-      "category": "Play Station 3",
-      "description": "qweqweqweqweqwe",
+      "category": "Mobile",
+      "description": "qweqweqweqweqweыыф",
       "image": "https://wiki.supercombo.gg/images/8/83/Mk3logo.png",
-      "price": 32,
+      "price": 322333,
       "id": 10
+    },
+    {
+      "title": "qwe",
+      "category": "Play Station 5",
+      "description": "qweqwe",
+      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "price": 213,
+      "id": 11
+    },
+    {
+      "title": "mk1",
+      "category": "Play Station 4",
+      "description": "qwe",
+      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "price": 123,
+      "id": 13
+    },
+    {
+      "title": "qweqwe",
+      "category": "Play Station 5",
+      "description": "qweqwe",
+      "image": "wqeqwe",
+      "price": 123,
+      "id": 14
+    },
+    {
+      "title": "qweqwe",
+      "category": "Play Station 5",
+      "description": "qweqwe",
+      "image": "wqeqwe",
+      "price": 123,
+      "id": 15
+    },
+    {
+      "title": "mkq",
+      "category": "Play Station 4",
+      "description": "qwd",
+      "image": "qwdwqd",
+      "price": 123,
+      "id": 16
+    },
+    {
+      "title": "qweqwe",
+      "category": "Play Station 5",
+      "description": "123123",
+      "image": "qweqwe",
+      "price": 12321,
+      "id": 17
+    },
+    {
+      "title": "syma got",
+      "category": "Play Station 5",
+      "description": "qweqwe",
+      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "price": 123,
+      "id": 18
+    },
+    {
+      "title": "123",
+      "category": "Play Station 5",
+      "description": "wqe",
+      "image": "qwe",
+      "price": 123,
+      "id": 19
     }
   ],
   "categories": [
@@ -44,7 +108,7 @@
     },
     {
       "icon": "https://cdn-mk1.mortalkombat.com/roster/sub-zero/thumb.webp",
-      "image": "https://cdn-mk1.mortalkombat.com/roster/sub-zero/thumb.webp",
+      "image": "https://cdn-mk1.mortalkombat.com/roster/sub-zero/hero.webp",
       "slog": "POWER",
       "name": "SUB-ZERO",
       "fam": "Grandmaster of the Lin Kuei",
