@@ -13,6 +13,7 @@ import { IconButton } from "@mui/material";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useNavigate } from "react-router-dom";
 import "../../index.css";
+import Detail from "./Detail";
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
@@ -32,7 +33,12 @@ export default function Cards({ item }) {
       }}
       className="cards"
     >
-      <CardMedia sx={{ height: 250 }} image={item.image} title="green iguana" />
+      <CardMedia
+        onClick={handleOpen}
+        sx={{ height: 250 }}
+        image={item.image}
+        title={item.title}
+      />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {item.title}
@@ -41,7 +47,7 @@ export default function Cards({ item }) {
           {item.description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {item.price}
+          {item.price}$
         </Typography>
       </CardContent>
       <CardActions>
@@ -61,6 +67,18 @@ export default function Cards({ item }) {
           <LocalMallIcon />
         </IconButton>
       </CardActions>
+
+      <Detail
+        id={item.id}
+        item={item}
+        category={item.category}
+        image={item.image}
+        title={item.title}
+        description={item.description}
+        price={item.price}
+        handleClose={handleClose}
+        open={open}
+      />
     </Card>
   );
 }

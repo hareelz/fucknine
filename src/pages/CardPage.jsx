@@ -5,7 +5,7 @@ import Filter from "../components/filter/Filter";
 const Card = () => {
   return (
     <div className="cardList-page">
-      {/* <Filter /> */}
+      <Filter />
       <CardList />
     </div>
   );

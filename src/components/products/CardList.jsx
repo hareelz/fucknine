@@ -2,15 +2,16 @@ import React, { useEffect } from "react";
 import { useCards } from "../../contexts/CardContextProvider";
 import { Box, Pagination } from "@mui/material";
 import Cards from "./Cards";
-import { useSearchParams } from "react-router-dom";
 import PaginationControlled from "./Pagination";
+import { useSearchParams } from "react-router-dom";
 
 const CardList = () => {
   const { getCards, cards } = useCards();
+  const [searchParams, setSearchParams] = useSearchParams();
   useEffect(() => {
     getCards();
     setPage(1);
-  }, []);
+  }, [searchParams]);
   const [page, setPage] = React.useState(1);
   const handleChange = (event, value) => {
     setPage(value);
