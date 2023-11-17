@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 import { Alert, Box, Button, TextField, Typography } from "@mui/material";
 import { useAuth } from "../../contexts/AuthContextProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Register from "./Register";
 
-export default function Register() {
-  const { authWithGoogle, register } = useAuth();
+export default function Login() {
+  const { user, login } = useAuth();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const handleSumbit = async () => {
+  const handleLoginSubmit = async () => {
     try {
-      await register(email, password);
+      await login(email, password);
       navigate("/");
     } catch (error) {
       setError(error.message);
+      navigate("/");
     }
   };
-
   return (
     <div className="admin-page">
       <Box sx={{ width: "50vw", margin: "200px auto" }}>
@@ -30,7 +31,7 @@ export default function Register() {
           fontFamily={"Roboto Slab, serif"}
           sx={{ color: "black" }}
         >
-          REGISTER PAGE
+          LOGIN PAGE
         </Typography>
         <TextField
           sx={{ mb: "15px" }}
@@ -50,17 +51,14 @@ export default function Register() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button className="auth-page-btn" onClick={() => handleSumbit()}>
-          SIGN UP
+        <button className="auth-page-btn" onClick={handleLoginSubmit}>
+          SIGN IN
         </button>
-
-        <button className="auth-page-btn" onClick={(e) => authWithGoogle()}>
-          CONTINUE WITH GOOGLE
-        </button>
-
-        <button className="auth-page-btn" onClick={() => navigate("/login")}>
-          ALREADY HAVE AN ACCOUNT
-        </button>
+        <Link to="/register">
+          <Typography sx={{ color: "black", margin: "20px 16rem" }}>
+            Don't have an account Sign Up
+          </Typography>
+        </Link>
       </Box>
     </div>
   );

@@ -108,7 +108,7 @@
 .auth-btn {
   height: 40px;
   width: 10rem;
-  margin-left: 20%;
+  margin-left: 150%;
   clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
   background: radial-gradient(
     circle,

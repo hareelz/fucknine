@@ -7,14 +7,26 @@ import Typography from "@mui/material/Typography";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import { useCart } from "../../contexts/CartContextProvider";
+
 import { IconButton } from "@mui/material";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useNavigate } from "react-router-dom";
 import "../../index.css";
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { ADMIN } from "../../helpers/consts";
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
+  const { addCardToCart, checkCardInCart } = useCart();
   const navigate = useNavigate();
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const { user } = useAuth();
+
   return (
     <Card
       sx={{
@@ -37,13 +49,23 @@ export default function Cards({ item }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <IconButton onClick={() => deleteCard(item.id)}>
-          <DeleteIcon />
-        </IconButton>
-        <IconButton onClick={() => navigate(`/edit/${item.id}`)}>
-          <EditIcon />
-        </IconButton>
-        <IconButton>
+        {user.email === ADMIN ? (
+          <>
+            <IconButton onClick={() => deleteCard(item.id)}>
+              <DeleteIcon />
+            </IconButton>
+            <IconButton onClick={() => navigate(`/edit/${item.id}`)}>
+              <EditIcon />
+            </IconButton>
+          </>
+        ) : null}
+        <IconButton
+          sx={{
+            backgroundColor: checkCardInCart(item.id) ? "black" : "",
+            color: checkCardInCart(item.id) ? "white" : "",
+          }}
+          onClick={() => addCardToCart(item)}
+        >
           <LocalMallIcon />
         </IconButton>
       </CardActions>
