@@ -71,15 +71,15 @@
 .Hero_img {
     z-index: 2;
     position: absolute;
-    width: 35%;
-    top: 20%;
-    left: 23%;
+    width: 44%;
+    top: 17%;
+    left: 14%;
 }
 
 .smoke_hero_bg {
     z-index: 1;
     position: absolute;
-    top: 20%;
+    top: -8%;
     left: 17%;
 
 }
@@ -92,7 +92,7 @@
     display: flex;
     position: absolute;
     z-index: 2;
-    top: 38%;
+    top: 32%;
     left: 39%;
     gap: 5px;
 }

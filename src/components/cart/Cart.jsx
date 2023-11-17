@@ -138,6 +138,7 @@ export default function Cart() {
         {" "}
         BUY NOW FOR {cart.totalPrice}
       </button>
+
       {/* <TableContainer component={Paper}>
         <Table
           sx={{

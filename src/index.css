@@ -104,6 +104,17 @@ s code {
   background: url("https://cdn-mk1.mortalkombat.com/static/smoke-center.webp");
 }
 
+.card-body {
+  font-family: "Roboto Slab", serif;
+}
+.card-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+/*  */
+
 .notFoundPage {
   background: url("https://steamuserimages-a.akamaihd.net/ugc/787478092106377965/22C5CC103A4563C9BC9755B5CA5F27B78C90A2F3/");
   width: 100vw;
@@ -132,4 +143,12 @@ s code {
   background-size: cover;
   width: 100vw;
   height: 110vh;
+}
+/*  */
+.roster-page {
+  position: absolute;
+  top: 0;
+  background: url('https://cdn-mk1.mortalkombat.com/purchase/purchase-edition-bg.jpg');
+  width: 100vw;
+  height: 100vh;
 }

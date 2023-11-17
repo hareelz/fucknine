@@ -14,6 +14,7 @@ import Login from "../components/auth/Login";
 import { useAuth } from "../contexts/AuthContextProvider";
 import { ADMIN } from "../helpers/consts";
 import OrderPage from "../pages/OrderPage";
+import ModalRoster from "../components/roster/ModalRosters";
 
 const PUBLIC_ROUTES = [
   { id: 1, link: "/", element: <HomePage /> },
@@ -30,6 +31,7 @@ const PUBLIC_ROUTES = [
 const PRIVATE_ROUTES = [
   { id: 5, link: "/admin", element: <AdminPage /> },
   { id: 7, link: "/edit/:id", element: <EditPage /> },
+  { id: 8, link: "/modal/:id", element: <ModalRoster /> },
 ];
 
 const MainRoutes = () => {
