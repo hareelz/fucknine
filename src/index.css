@@ -62,6 +62,15 @@ s code {
 .cards {
   background: url("https://cdn-mk1.mortalkombat.com/static/smoke-center.webp");
 }
+.card-body {
+  font-family: "Roboto Slab", serif;
+}
+.card-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
 /*  */
 .notFoundPage {
   background: url("https://steamuserimages-a.akamaihd.net/ugc/787478092106377965/22C5CC103A4563C9BC9755B5CA5F27B78C90A2F3/");
