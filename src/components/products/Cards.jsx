@@ -14,12 +14,9 @@ import { IconButton } from "@mui/material";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useNavigate } from "react-router-dom";
 import "../../index.css";
-<<<<<<< HEAD
-import Detail from "./Detail";
-=======
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { ADMIN } from "../../helpers/consts";
->>>>>>> 233802edb1f133903f441b53f8ac8cbe57718d70
+import Detail from "./Detail";
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
@@ -42,16 +39,6 @@ export default function Cards({ item }) {
       }}
       className="cards"
     >
-<<<<<<< HEAD
-      <CardMedia
-        onClick={handleOpen}
-        sx={{ height: 250 }}
-        image={item.image}
-        title={item.title}
-      />
-      <CardContent sx={{ gap: "2em" }}>
-        <Typography gutterBottom variant="h5" component="div">
-=======
       <CardMedia sx={{ height: 250 }} image={item.image} title="green iguana" />
       <CardContent
         className="card-body"
@@ -64,7 +51,6 @@ export default function Cards({ item }) {
           className="card-title"
           sx={{ fontFamily: "Roboto Slab", textAlign: "center" }}
         >
->>>>>>> 233802edb1f133903f441b53f8ac8cbe57718d70
           {item.title}
         </Typography>
         <Typography
@@ -75,10 +61,6 @@ export default function Cards({ item }) {
         >
           {item.description}
         </Typography>
-<<<<<<< HEAD
-        <Typography variant="body2" color="text.secondary">
-          {item.price}$
-=======
         <Typography
           variant="body2"
           color="text.secondary"
@@ -86,15 +68,16 @@ export default function Cards({ item }) {
           sx={{ fontFamily: "Roboto Slab", textAlign: "center" }}
         >
           {item.price}
->>>>>>> 233802edb1f133903f441b53f8ac8cbe57718d70
         </Typography>
       </CardContent>
-      <CardActions sx={{
+      <CardActions
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",
           height: "5rem",
-        }}>
+        }}
+      >
         {user.email === ADMIN ? (
           <>
             <IconButton onClick={() => deleteCard(item.id)}>

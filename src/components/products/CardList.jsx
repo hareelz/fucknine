@@ -35,6 +35,7 @@ const CardList = () => {
           display: "flex",
           flexWrap: "wrap",
           margin: "15rem 20rem",
+          height: "100vh",
         }}
       >
         {currentData().map((item) => (

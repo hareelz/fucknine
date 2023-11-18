@@ -18,6 +18,7 @@ const GameInfo = () => {
         <GameInfoContent />
         <StoryContent />
         <ParallaxComponent />
+        <Footer />
       </div>
     </div>
   );

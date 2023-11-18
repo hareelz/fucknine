@@ -67,18 +67,17 @@
 }
 
 .Hero_img {
-<<<<<<< HEAD
   z-index: 2;
   position: absolute;
-  width: 35%;
-  top: 20%;
-  left: 23%;
+  width: 44%;
+  top: 17%;
+  left: 14%;
 }
 
 .smoke_hero_bg {
   z-index: 1;
   position: absolute;
-  top: 20%;
+  top: -8%;
   left: 17%;
 }
 
@@ -90,37 +89,9 @@
   display: flex;
   position: absolute;
   z-index: 2;
-  top: 38%;
+  top: 32%;
   left: 39%;
   gap: 5px;
-=======
-    z-index: 2;
-    position: absolute;
-    width: 44%;
-    top: 17%;
-    left: 14%;
-}
-
-.smoke_hero_bg {
-    z-index: 1;
-    position: absolute;
-    top: -8%;
-    left: 17%;
-
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    font-family: "Cinzel", serif;
-    display: flex;
-    position: absolute;
-    z-index: 2;
-    top: 32%;
-    left: 39%;
-    gap: 5px;
->>>>>>> 233802edb1f133903f441b53f8ac8cbe57718d70
 }
 
 .up_title {

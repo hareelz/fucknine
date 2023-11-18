@@ -2,14 +2,15 @@ import React from "react";
 import "./Footer.css";
 import BtnBuyNow from "./gameInfo/BtnBuyNow";
 
-const Footer = () => {
+const FooterHome = () => {
   return (
-    <div>
-      <BtnBuyNow />
-      <div className="footer">
-        <div className="footerfire-block">
+    <div className="wrapper-footer_block">
+      <div className="footer-home__block">
+        <div className="game-info_block__content"></div>
+
+        <div className="fire-block-2">
           <video
-            className="footer__fire-top"
+            className="btn-buy-now__fire-top"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4"
             autoPlay
             loop
@@ -17,7 +18,34 @@ const Footer = () => {
             playsInline
           ></video>
         </div>
-        <div className="footer_content">
+
+        <div className="logo_block">
+          <img
+            className="logo_text"
+            src="https://cdn-mk1.mortalkombat.com/static/mk1-logo-tm.webp"
+            alt=""
+          />
+          <img
+            className="logo_img"
+            src="https://cdn-mk1.mortalkombat.com/home/sigil.webp"
+            alt=""
+          />
+        </div>
+        <button className="btn_buy-now">BUY NOW</button>
+      </div>
+
+      <div className="footer-home">
+        <div className="footerfire-block-home">
+          <video
+            className="footer__fire-top-home"
+            src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4"
+            autoPlay
+            loop
+            // muted
+            playsInline
+          ></video>
+        </div>
+        <div className="footer-home_content">
           <ul className="logo_list">
             <li className="logo_item">
               <a href="">
@@ -96,4 +124,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterHome;

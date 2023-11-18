@@ -28,6 +28,11 @@ s code {
   left: 25%;
   top: 25%;
 }
+
+.app {
+  position: relative;
+}
+
 .admin-page-inp {
   background-color: aliceblue;
   opacity: 0.8;
@@ -82,12 +87,11 @@ s code {
   clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
   border: none;
   cursor: pointer;
-  font-family: "Roboto Slab", serif;
+
   width: 50%;
   margin: 20px 12rem;
   font-size: 20px;
   padding: 15px;
-  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
   background: radial-gradient(
     circle,
     rgb(50, 98, 180) 0%,
@@ -121,17 +125,18 @@ s code {
   height: 100vh;
   position: absolute;
   top: 0;
+  z-index: 5;
 }
 .notFoundContent {
   position: absolute;
-  top: 25%;
-  left: 40%;
+  top: 35%;
+  left: 20%;
   text-align: center;
 }
 .notFoundTitle {
   position: absolute;
-  top: 48%;
-  left: 34.5%;
+  top: 25%;
+  left: 50%;
   text-align: center;
 }
 
@@ -148,7 +153,7 @@ s code {
 .roster-page {
   position: absolute;
   top: 0;
-  background: url('https://cdn-mk1.mortalkombat.com/purchase/purchase-edition-bg.jpg');
+  background: url("https://cdn-mk1.mortalkombat.com/purchase/purchase-edition-bg.jpg");
   width: 100vw;
   height: 100vh;
 }

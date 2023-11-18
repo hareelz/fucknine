@@ -50,22 +50,6 @@ p {
   background-size: 100% 55em;
 }
 
-.wrapper_game-info__block::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  transform-origin: center;
-  min-height: 100vh;
-  transition: 1s;
-  /* Parallax */
-  transform: translateZ(1px) scale(1);
-}
-
 .content__block {
   margin-top: -4em;
 }
@@ -471,22 +455,26 @@ p {
 }
 
 .btn_buy-now {
-  width: 12em;
-  height: 3em;
-  font-size: 1em;
-  margin-left: 34.5em;
-  font-weight: 800;
   color: #fff;
-  background: rgb(17, 53, 139);
-  text-shadow: 0 0 5px #96b9fc;
-  margin-top: 2em;
-  clip-path: polygon(0% 50%, 8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%);
+  border-style: none;
+  transition: 0.1s;
+  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
+  border: none;
+  cursor: pointer;
+  width: 12%;
+  margin: 2em 0 0 35rem;
+  font-size: 1em;
+  padding: 15px;
+  background: radial-gradient(
+    circle,
+    rgb(50, 98, 180) 0%,
+    rgb(17, 53, 139) 100%
+  );
 }
 
 .btn_buy-now:hover {
-  background: rgb(17, 53, 139) 0%;
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.05);
-  text-shadow: 0 0 5px #96b9fc, 0 0 10px #96b9fc;
+  clip-path: polygon(3% 50%, 11% 0%, 89% 0%, 97% 50%, 89% 100%, 11% 100%);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  font-size: 1.1em;
 }
 /* !BTN BUY NOW */
