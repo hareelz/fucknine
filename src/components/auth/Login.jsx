@@ -21,8 +21,8 @@ export default function Login() {
     }
   };
   return (
-    <div className="admin-page">
-      <Box sx={{ width: "50vw", margin: "200px auto" }}>
+    <div className="auth-page">
+      <Box sx={{ width: "50vw", margin: "200px auto", padding: "200px 0 0 0" }}>
         {error && <Alert severity="error">{error}</Alert>}
         <Typography
           variant="h3"

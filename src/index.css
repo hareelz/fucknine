@@ -15,7 +15,6 @@ s code {
 /* font-family: 'Roboto Slab', serif; */
 /* ! admin page */
 .admin-page {
-  position: absolute;
   margin-top: -5.4%;
   top: 0;
   background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
@@ -94,6 +93,14 @@ s code {
     rgb(17, 53, 139) 100%
   );
 }
+.auth-page {
+  margin-top: -18.5%;
+  top: 0;
+  background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
 
 .auth-page-btn:hover {
   clip-path: polygon(3% 50%, 11% 0%, 89% 0%, 97% 50%, 89% 100%, 11% 100%);
@@ -135,7 +142,7 @@ s code {
   text-align: center;
 }
 
-.auth-page {
+/* .auth-page {
   position: absolute;
   margin-top: 0;
   top: 0;
@@ -143,7 +150,7 @@ s code {
   background-size: cover;
   width: 100vw;
   height: 110vh;
-}
+} */
 /*  */
 .roster-page {
   position: absolute;
