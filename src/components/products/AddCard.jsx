@@ -27,6 +27,7 @@ const AddCard = () => {
     description: "",
     image: "",
     price: 0,
+    like: 0,
   });
   useEffect(() => {
     getCategories();

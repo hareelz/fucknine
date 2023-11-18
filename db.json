@@ -71,6 +71,15 @@
       "image": "qwe",
       "price": 123,
       "id": 19
+    },
+    {
+      "title": "weq",
+      "category": "Play Station 5",
+      "description": "erfergvfdvdf",
+      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "price": 123,
+      "like": 0,
+      "id": 20
     }
   ],
   "categories": [

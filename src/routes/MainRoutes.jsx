@@ -26,12 +26,12 @@ const PUBLIC_ROUTES = [
   { id: 9, link: "/login", element: <Login /> },
   { id: 10, link: "/cardPage", element: <CardPage /> },
   { id: 11, link: "/orderPage", element: <OrderPage /> },
+  { id: 12, link: "/modal/:id", element: <ModalRoster /> },
 ];
 
 const PRIVATE_ROUTES = [
   { id: 5, link: "/admin", element: <AdminPage /> },
   { id: 7, link: "/edit/:id", element: <EditPage /> },
-  { id: 8, link: "/modal/:id", element: <ModalRoster /> },
 ];
 
 const MainRoutes = () => {
