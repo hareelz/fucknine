@@ -1,8 +1,17 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContextProvider";
+import { Avatar, IconButton, Tooltip } from "@mui/material";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { ADMIN } from "../helpers/consts";
 const Navbar = () => {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+  const handleLogOut = () => {
+    logout();
+    navigate("/");
+  };
   return (
     <div
       className="nav-bcg"
@@ -43,20 +52,59 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-list">
-          <Link to={"/card"} className="link-nav">
+          <Link to={"/cardPage"} className="link-nav">
             Buy Games
           </Link>
         </li>
-        <li className="nav-list">
-          <Link to={"/admin"} className="link-nav">
-            Admin
-          </Link>
-        </li>
+        {user.email === ADMIN ? (
+          <li className="nav-list">
+            <Link to={"/admin"} className="link-nav">
+              Admin
+            </Link>
+          </li>
+        ) : null}
+
         <li className="nav-list">
           <Link to={"/cartPage"} className="link-nav">
             Cart
           </Link>
         </li>
+
+        {user ? (
+          <>
+            <li>
+              <Link to={"/register"}>
+                <button className="auth-btn" onClick={handleLogOut}>
+                  LOG OUT
+                </button>
+              </Link>
+            </li>
+
+            <Tooltip title={user.email}>
+              <li style={{ marginLeft: "20%" }}>
+                <IconButton>
+                  {" "}
+                  <Avatar alt={user.displayName} src={user.photoUrl} />
+                </IconButton>
+              </li>
+            </Tooltip>
+          </>
+        ) : (
+          <>
+            <li>
+              <Link to={"/register"}>
+                <button className="auth-btn">SIGN UP</button>
+              </Link>
+            </li>
+
+            <li style={{ marginLeft: "20%" }}>
+              <IconButton>
+                {" "}
+                <AccountCircleIcon fontSize="large"></AccountCircleIcon>
+              </IconButton>
+            </li>
+          </>
+        )}
       </ul>
     </div>
   );

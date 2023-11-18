@@ -1,11 +1,13 @@
 import * as React from "react";
 import { useCart } from "../../contexts/CartContextProvider";
-import { Button, Icon, IconButton } from "@mui/material";
+import { Button, Icon, IconButton, Box } from "@mui/material";
 import "./Cart.css";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const { cart, getCart, changeCardCount, deleteCardFromCart } = useCart();
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     getCart();
@@ -132,7 +134,10 @@ export default function Cart() {
           </li>
         </ul>
       ))}
-      <button onClick={cartCleaner}> BUY NOW FOR {cart.totalPrice}</button>
+      <button onClick={() => navigate("/orderPage")}>
+        {" "}
+        BUY NOW FOR {cart.totalPrice}
+      </button>
 
       {/* <TableContainer component={Paper}>
         <Table

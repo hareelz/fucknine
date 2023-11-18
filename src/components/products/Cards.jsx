@@ -8,12 +8,18 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { useCart } from "../../contexts/CartContextProvider";
-
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import { IconButton } from "@mui/material";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useNavigate } from "react-router-dom";
 import "../../index.css";
+<<<<<<< HEAD
 import Detail from "./Detail";
+=======
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { ADMIN } from "../../helpers/consts";
+>>>>>>> 233802edb1f133903f441b53f8ac8cbe57718d70
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
@@ -23,6 +29,8 @@ export default function Cards({ item }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const { user } = useAuth();
 
   return (
     <Card
@@ -34,6 +42,7 @@ export default function Cards({ item }) {
       }}
       className="cards"
     >
+<<<<<<< HEAD
       <CardMedia
         onClick={handleOpen}
         sx={{ height: 250 }}
@@ -42,30 +51,72 @@ export default function Cards({ item }) {
       />
       <CardContent sx={{ gap: "2em" }}>
         <Typography gutterBottom variant="h5" component="div">
+=======
+      <CardMedia sx={{ height: 250 }} image={item.image} title="green iguana" />
+      <CardContent
+        className="card-body"
+        sx={{ maxHeight: "7rem", height: "7rem" }}
+      >
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          className="card-title"
+          sx={{ fontFamily: "Roboto Slab", textAlign: "center" }}
+        >
+>>>>>>> 233802edb1f133903f441b53f8ac8cbe57718d70
           {item.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          className="card-desc"
+          sx={{ fontFamily: "Roboto Slab", textAlign: "center" }}
+        >
           {item.description}
         </Typography>
+<<<<<<< HEAD
         <Typography variant="body2" color="text.secondary">
           {item.price}$
+=======
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          className="card-price"
+          sx={{ fontFamily: "Roboto Slab", textAlign: "center" }}
+        >
+          {item.price}
+>>>>>>> 233802edb1f133903f441b53f8ac8cbe57718d70
         </Typography>
       </CardContent>
-      <CardActions>
-        <IconButton onClick={() => deleteCard(item.id)}>
-          <DeleteIcon />
-        </IconButton>
-        <IconButton onClick={() => navigate(`/edit/${item.id}`)}>
-          <EditIcon />
-        </IconButton>
+      <CardActions sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "flex-end",
+          height: "5rem",
+        }}>
+        {user.email === ADMIN ? (
+          <>
+            <IconButton onClick={() => deleteCard(item.id)}>
+              <DeleteIcon />
+            </IconButton>
+            <IconButton onClick={() => navigate(`/edit/${item.id}`)}>
+              <EditIcon />
+            </IconButton>
+          </>
+        ) : null}
+
         <IconButton
           sx={{
-            backgroundColor: checkCardInCart(item.id) ? "black" : "",
+            backgroundColor: checkCardInCart(item.id) ? "green" : "",
             color: checkCardInCart(item.id) ? "white" : "",
           }}
           onClick={() => addCardToCart(item)}
         >
-          <LocalMallIcon />
+          <MonetizationOnIcon />
+        </IconButton>
+        <IconButton>
+          <FavoriteIcon />
         </IconButton>
       </CardActions>
 

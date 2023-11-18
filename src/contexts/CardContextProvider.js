@@ -9,6 +9,7 @@ export const useCards = () => useContext(cardContext);
 const INIT_STATE = {
   cards: [],
   oneCard: null,
+  oneChel: {},
   categories: [],
   roster: [],
 };
@@ -23,6 +24,8 @@ const reducer = (state = INIT_STATE, action) => {
       return { ...state, categories: action.payload };
     case ACTIONS.GET_ROSTER:
       return { ...state, roster: action.payload };
+    case ACTIONS.GET_ONE_CHEL:
+      return { ...state, oneChel: action.payload };
     default:
       return state;
   }
@@ -69,6 +72,10 @@ const CardContextProvider = ({ children }) => {
     const res = await axios.get(API_ROSTERS);
     dispatch({ type: ACTIONS.GET_ROSTER, payload: res.data });
   };
+  const getOneChel = async (id) => {
+    const res = await axios.get(`${API_ROSTERS}/${id}`);
+    dispatch({ type: ACTIONS.GET_ONE_CHEL, payload: res.data });
+  };
 
   const fetchByParams = (query, value) => {
     const search = new URLSearchParams(window.location.search);
@@ -99,9 +106,10 @@ const CardContextProvider = ({ children }) => {
 
     fetchByParams,
     getRoster,
+    getOneChel,
+    oneChel: state.oneChel,
     roster: state.roster,
   };
   return <cardContext.Provider value={values}>{children}</cardContext.Provider>;
 };
-
 export default CardContextProvider;
