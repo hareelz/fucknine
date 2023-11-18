@@ -31,7 +31,7 @@ export default function Cards({ item }) {
   return (
     <Card
       sx={{
-        width: "calc(32% - 1vw)",
+        width: "calc(24% - 1vw)",
         margin: "0 10px",
         height: 500,
       }}
@@ -68,12 +68,14 @@ export default function Cards({ item }) {
           {item.price}
         </Typography>
       </CardContent>
-      <CardActions sx={{
+      <CardActions
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",
           height: "5rem",
-        }}>
+        }}
+      >
         {user.email === ADMIN ? (
           <>
             <IconButton onClick={() => deleteCard(item.id)}>
