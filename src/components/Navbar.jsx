@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useDebugValue, useEffect } from "react";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
@@ -9,8 +9,8 @@ const Navbar = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const handleLogOut = () => {
-    logout();
     navigate("/");
+    logout();
   };
   return (
     <div
@@ -73,7 +73,7 @@ const Navbar = () => {
         {user ? (
           <>
             <li>
-              <Link to={"/register"}>
+              <Link to={"/"}>
                 <button className="auth-btn" onClick={handleLogOut}>
                   LOG OUT
                 </button>

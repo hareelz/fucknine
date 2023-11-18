@@ -30,8 +30,8 @@ const PUBLIC_ROUTES = [
 ];
 
 const PRIVATE_ROUTES = [
-  { id: 1, link: "/admin", element: <AdminPage /> },
-  { id: 2, link: "/edit/:id", element: <EditPage /> },
+  { id: 5, link: "/admin", element: <AdminPage /> },
+  { id: 7, link: "/edit/:id", element: <EditPage /> },
 ];
 
 const MainRoutes = () => {

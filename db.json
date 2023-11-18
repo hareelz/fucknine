@@ -17,22 +17,6 @@
       "id": 11
     },
     {
-      "title": "mk1",
-      "category": "Play Station 4",
-      "description": "qwe",
-      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
-      "price": 123,
-      "id": 13
-    },
-    {
-      "title": "qweqwe",
-      "category": "Play Station 5",
-      "description": "qweqwe",
-      "image": "wqeqwe",
-      "price": 123,
-      "id": 14
-    },
-    {
       "title": "qweqwe",
       "category": "Play Station 5",
       "description": "qweqwe",
@@ -71,6 +55,15 @@
       "image": "qwe",
       "price": 123,
       "id": 19
+    },
+    {
+      "title": "weq",
+      "category": "Play Station 5",
+      "description": "erfergvfdvdf",
+      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "price": 123,
+      "like": 0,
+      "id": 20
     }
   ],
   "categories": [

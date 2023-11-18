@@ -18,7 +18,7 @@ const CardList = () => {
     setPage(value);
   };
 
-  const itemPerPage = 3;
+  const itemPerPage = 4;
   const count = Math.ceil(cards.length / itemPerPage);
 
   function currentData() {
@@ -34,8 +34,8 @@ const CardList = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          margin: "15rem 20rem",
           height: "100vh",
+          margin: "15rem",
         }}
       >
         {currentData().map((item) => (

@@ -32,7 +32,7 @@ export default function Cards({ item }) {
   return (
     <Card
       sx={{
-        width: "calc(32% - 1vw)",
+        width: "calc(24% - 1vw)",
         margin: "0 10px",
         marginTop: "-12em",
         height: 500,

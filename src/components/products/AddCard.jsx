@@ -27,6 +27,7 @@ const AddCard = () => {
     description: "",
     image: "",
     price: 0,
+    like: 0,
   });
   useEffect(() => {
     getCategories();
@@ -73,6 +74,7 @@ const AddCard = () => {
           align="center"
           className="admin-page-title"
           fontFamily={"Roboto Slab, serif"}
+          color={"#fff"}
         >
           ADMIN PAGE
         </Typography>
