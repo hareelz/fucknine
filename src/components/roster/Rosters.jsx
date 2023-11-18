@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "../roster/Roster.css";
 import { useCards } from "../../contexts/CardContextProvider";
-import ModalRoster from "./ModalRosters";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer";
 
 const Rosters = () => {
   const { getRoster, roster } = useCards();

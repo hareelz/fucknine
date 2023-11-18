@@ -24,22 +24,11 @@ const ParallaxComponent = () => {
         style={{ transform: `translateY(${translateY}px)` }}
       >
         <div className="invasions-block_content">
-          <div
-            className="invasions-block_title"
-            // style={{ transform: `translateY(${translateY}px)` }}
-          >
-            INVASIONS
-          </div>
-          <div
-            className="invasions-block_subtitle"
-            // style={{ transform: `translateY(${translateY}px)` }}
-          >
+          <div className="invasions-block_title">INVASIONS</div>
+          <div className="invasions-block_subtitle">
             Fight against the invading forces that threaten your timeline.
           </div>
-          <div
-            className="invasions-block_desc"
-            // style={{ transform: `translateY(${translateY}px)` }}
-          >
+          <div className="invasions-block_desc">
             Invasions is a dynamic single player campaign with a variety of
             distinct challenges. With built in progression and RPG mechanics,
             mixed with MK1’s incredible fighting action, Invasions provides

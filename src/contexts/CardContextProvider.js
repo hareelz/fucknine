@@ -99,9 +99,9 @@ const CardContextProvider = ({ children }) => {
     getOneCard,
     oneCard: state.oneCard,
     saveChanges,
+    createCategories,
 
     getCategories,
-    createCategories,
     categories: state.categories,
 
     fetchByParams,

@@ -134,58 +134,10 @@ export default function Cart() {
           </li>
         </ul>
       ))}
-      <button onClick={() => navigate("/orderPage")}>
+      <button className="btn_cart" onClick={() => navigate("/orderPage")}>
         {" "}
-        BUY NOW FOR {cart.totalPrice}
+        BUY NOW FOR <br /> {cart.totalPrice}
       </button>
-
-      {/* <TableContainer component={Paper}>
-        <Table
-          sx={{
-            minWidth: 650,
-            width: "80%",
-            margin: "auto",
-          }}
-          aria-label="simple table"
-        >
-          <TableBody>
-            {cart.cards.map((row) => (
-              <TableRow
-                key={row.item.id}
-                sx={{
-                  border: "2px solid black",
-                  gap: "20px",
-                }}
-              >
-                <TableCell component="th" scope="row">
-                  <img src={row.item.image} alt="" width={"100"} />
-                </TableCell>
-                <TableCell align="right">{row.item.title}</TableCell>
-                <TableCell align="right">{row.item.category}</TableCell>
-                <TableCell align="right">{row.item.price}</TableCell>
-                <TableCell align="right">
-                  <input
-                    onChange={(e) =>
-                      changeCardCount(row.item.id, e.target.value)
-                    }
-                    type="number"
-                    value={row.count}
-                    min={1}
-                    max={20}
-                  />
-                </TableCell>
-                <TableCell align="right">{row.subPrice}</TableCell>
-                <TableCell align="right">
-                  <Button onClick={() => deleteCardFromCart(row.item.id)}>
-                    DELETE
-                  </Button>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-        <Button onClick={cartCleaner}> BUY NOW FOR {cart.totalPrice}</Button>
-      </TableContainer> */}
     </div>
   );
 }

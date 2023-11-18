@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 import "../../index.css";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { ADMIN } from "../../helpers/consts";
+import Detail from "./Detail";
 
 export default function Cards({ item }) {
   const { deleteCard } = useCards();
@@ -33,6 +34,7 @@ export default function Cards({ item }) {
       sx={{
         width: "calc(24% - 1vw)",
         margin: "0 10px",
+        marginTop: "-12em",
         height: 500,
       }}
       className="cards"
@@ -100,6 +102,18 @@ export default function Cards({ item }) {
           <FavoriteIcon />
         </IconButton>
       </CardActions>
+
+      <Detail
+        id={item.id}
+        item={item}
+        category={item.category}
+        image={item.image}
+        title={item.title}
+        description={item.description}
+        price={item.price}
+        handleClose={handleClose}
+        open={open}
+      />
     </Card>
   );
 }

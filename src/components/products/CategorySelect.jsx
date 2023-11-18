@@ -6,7 +6,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 export default function CategorySelect(props) {
-  const { categories, handleInput, card } = props;
+  const { categories, handleInput } = props;
   const [age, setAge] = React.useState("");
 
   const handleChange = (event) => {
@@ -16,17 +16,14 @@ export default function CategorySelect(props) {
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">
-          {card ? card.category : "Category"}
-        </InputLabel>
+        <InputLabel id="demo-simple-select-label">Choose category</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           name="category"
           onChange={handleInput}
           label="Category"
-          defaultValue={card ? card.category : ""}
-          className="admin-page-inp"
+          defaultValue={""}
         >
           {categories.map((item) => (
             <MenuItem key={item.id} value={item.name}>

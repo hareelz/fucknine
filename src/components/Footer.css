@@ -5,17 +5,218 @@ body {
 .footer {
   position: relative;
   width: 100%;
-  height: 35em;
-  background: aqua;
-  margin-top: -5em;
+  height: 26em;
+  background-color: #0e1a2d;
+  margin-top: 70.1em;
   z-index: -1;
 }
-
-.fire-top_footer {
+.footer__fire-top {
   width: 100%;
   position: absolute;
   mix-blend-mode: screen;
+  z-index: 4;
+  bottom: 30.8em;
+  left: -0.7em;
+}
+/* !-------------------------------------------- */
+
+.wrapper-footer_block {
+  margin: 0;
+}
+
+.footer-home {
+  position: relative;
   width: 100%;
-  bottom: 30.5em;
+  height: 55em;
+  background-color: #0e1a2d;
+  top: 1em;
   z-index: -1;
+}
+.footer__fire-top-home {
+  width: 100%;
+  position: absolute;
+  mix-blend-mode: screen;
+  z-index: 4;
+  bottom: 30.8em;
+  left: -0.7em;
+}
+
+.footer-home__block {
+  width: 100%;
+  height: 30em;
+  position: absolute;
+  top: 96em;
+  left: 0;
+  overflow: hidden;
+  background: url("https://cdn-mk1.mortalkombat.com/static/paper-alternative-fill.jpg");
+  background-size: cover;
+  transform: scale3d(1, -1.05);
+  clip-path: polygon(
+    0% 0%,
+    2% 0%,
+    4% 0%,
+    8% 0%,
+    10.7% 0%,
+    23% 0%,
+    26.2% 0%,
+    28% 0%,
+    35% 0%,
+    36% 0%,
+    42% 0%,
+    50% 0%,
+    53% 0%,
+    62% 0%,
+    64% 0%,
+    69% 0%,
+    72.5% 0%,
+    79% 0%,
+    86% 0%,
+    88% 0%,
+    91% 0%,
+    93% 0%,
+    100% 0%,
+    100% 88%,
+    98% 87%,
+    84% 90.3%,
+    79% 94.9%,
+    75% 98%,
+    70% 95.5%,
+    64% 94.5%,
+    59% 91.8%,
+    57% 91.6%,
+    51.5% 95.4%,
+    51% 95.3%,
+    43.9% 95%,
+    45.6% 95%,
+    38% 95%,
+    30% 95.5%,
+    24.7% 93.5%,
+    20% 94.5%,
+    17.2% 93.8%,
+    14.5% 92.5%,
+    12% 94.1%,
+    8.5% 95.2%,
+    6% 92.7%,
+    0% 88.5%
+  );
+}
+
+.footer_content {
+  position: absolute;
+  width: 80%;
+  top: 3em;
+  left: 7em;
+}
+
+.logo_list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0em;
+}
+
+.logo_item:nth-child(4) {
+  width: 10em;
+
+  margin: 3em;
+}
+.logo_item:nth-child(3) {
+  width: 10em;
+
+  margin-top: 3em;
+}
+
+.logo_item {
+  width: 5em;
+  margin: auto;
+  margin-left: 2em;
+}
+
+.footer-desc {
+  font-size: 0.7em;
+  text-align: center;
+  margin-left: 7em;
+  margin-top: 5em;
+}
+
+.footer-desc2 {
+  font-size: 0.5em;
+  letter-spacing: 0.3em;
+  margin-left: 2em;
+  margin-top: 8em;
+}
+
+.wb-logo {
+  width: 3%;
+  margin-top: 3em;
+}
+
+.footer-wb-games-desc {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* !======================================== */
+
+.footer-home_content {
+  position: absolute;
+  width: 80%;
+  top: 30em;
+  left: 7em;
+}
+
+.logo_list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0em;
+}
+
+.logo_item:nth-child(4) {
+  width: 10em;
+
+  margin: 3em;
+}
+.logo_item:nth-child(3) {
+  width: 10em;
+
+  margin-top: 3em;
+}
+
+.logo_item {
+  width: 5em;
+  margin: auto;
+  margin-left: 2em;
+}
+
+.footer-desc {
+  font-size: 0.7em;
+  text-align: center;
+  margin-left: 7em;
+  margin-top: 5em;
+}
+
+.footer-desc2 {
+  font-size: 0.5em;
+  letter-spacing: 0.3em;
+  margin-left: 2em;
+  margin-top: 8em;
+}
+
+.wb-logo {
+  width: 3%;
+  margin-top: 3em;
+}
+
+.footer-wb-games-desc {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
 }

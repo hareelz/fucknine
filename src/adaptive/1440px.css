@@ -1,0 +1,77 @@
+html,
+body,
+div,
+video {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Адаптация для мобильных устройств */
+@media (min-width: 1440px) {
+  html,
+  body,
+  div,
+  video {
+    margin: 0;
+    padding: 0;
+  }
+  .fire-block-2,
+  .fire-block,
+  .fire-img-block-bot,
+  .game-info_block__content,
+  .fire-img-block-top {
+    flex-basis: 100%;
+  }
+  /* Базовые стили для компонента GameInfoContent */
+  .content__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Стили для блока с огнем сверху */
+  .fire-block-2 {
+    flex-basis: 100%;
+  }
+
+  /* Стили для видео с огнем сверху */
+  .content_block__fire-top {
+    width: 100%;
+    height: auto;
+    margin-top: 3.8em;
+  }
+
+  /* Стили для огня снизу */
+  .fire-block {
+    flex-basis: 100%;
+  }
+
+  /* Стили для видео с огнем снизу */
+  .content_block__fire-bot {
+    width: 97.5%;
+    height: auto;
+  }
+
+  /* Дополнительные стили для остальных блоков, добавьте по мере необходимости */
+  .fire-img-block-bot,
+  .game-info_block__content,
+  .fire-img-block-top {
+    flex-basis: 100%; /* Занимает 100% ширины в начале, потом адаптируется */
+    height: 30em;
+  }
+
+  .wrapper-block_invasions {
+    margin-top: -26em;
+  }
+
+  .btn-buy-now__block {
+    margin-top: 7em;
+  }
+
+  .footer {
+    margin-top: 100em;
+  }
+}
