@@ -1,5 +1,4 @@
 import React from "react";
-import "../gameInfo/GameInfoSlider.css";
 
 const GameInfoContent = () => {
   return (
@@ -28,25 +27,19 @@ const GameInfoContent = () => {
             </p>
           </div>
           <div className="content_right-block">
-            <div className="img_block">
-              {/* <img
-                className="right-block_img"
-                src="https://cdn-mk1.mortalkombat.com/game/kameo-screen-03-t.jpg"
-                alt=""
-              /> */}
-            </div>
+            <div className="img_block"></div>
           </div>
         </div>
 
         <div className="fire-block-2">
-          <video
+          {/* <video
             className="content_block__fire-top"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4"
             // autoPlay
             loop
             // muted
             playsInline
-          ></video>
+          ></video> */}
         </div>
       </div>
     </div>

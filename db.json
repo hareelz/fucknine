@@ -1,28 +1,12 @@
 {
   "cards": [
     {
-      "title": "Mortal Kombat 3 ulrimate",
-      "category": "Mobile",
-      "description": "qweqweqweqweqweыыф",
+      "title": "Mortal Kombat ",
+      "category": "Play Station 4",
+      "description": "Good Game",
       "image": "https://wiki.supercombo.gg/images/8/83/Mk3logo.png",
-      "price": 322333,
+      "price": 1299,
       "id": 10
-    },
-    {
-      "title": "qwe",
-      "category": "Play Station 5",
-      "description": "qweqwe",
-      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
-      "price": 213,
-      "id": 11
-    },
-    {
-      "title": "qweqwe",
-      "category": "Play Station 5",
-      "description": "qweqwe",
-      "image": "wqeqwe",
-      "price": 123,
-      "id": 15
     },
     {
       "title": "mkq",
@@ -44,7 +28,7 @@
       "title": "syma got",
       "category": "Play Station 5",
       "description": "qweqwe",
-      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "image": "1",
       "price": 123,
       "id": 18
     },
@@ -60,7 +44,7 @@
       "title": "weq",
       "category": "Play Station 5",
       "description": "erfergvfdvdf",
-      "image": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/SonyaKAM_Tower.png/revision/latest?cb=20230921143248",
+      "image": "123",
       "price": 123,
       "like": 0,
       "id": 20

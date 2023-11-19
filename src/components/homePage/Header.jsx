@@ -12,6 +12,7 @@ const Header = () => {
         playsInline
         className="videoMk"
       ></video>
+      <div className="video-container_bg"></div>
     </div>
   );
 };

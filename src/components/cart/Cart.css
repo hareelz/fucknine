@@ -7,9 +7,13 @@
 }
 .cart-page {
   position: absolute;
+  height: 100vh;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: url("https://cdn-mk1.mortalkombat.com/purchase/purchase-page-bg-1600.jpg");
-  background-repeat: repeat-y;
+
   width: 100vw;
 }
 .cart-list {
@@ -22,9 +26,9 @@
   clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
   border: none;
   cursor: pointer;
-  width: 20em;
+  width: 15em;
   height: 4em;
-  margin-left: 32em;
+  margin-left: 35em;
   margin-top: 2em;
   margin-bottom: 5em;
   font-size: 1em;

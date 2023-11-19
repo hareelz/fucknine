@@ -1,14 +1,11 @@
 import React from "react";
 import "../components/gameInfo/GameInfo.css";
 import MainBlock from "../components/gameInfo/MainBlock";
-
 import GameInfoContent from "../components/gameInfo/GameInfoContent";
 import StoryContent from "../components/gameInfo/StoryContent";
-import Invasions from "../components/gameInfo/Invasions";
 import ParallaxComponent from "../components/gameInfo/ParallaxEffect";
-import BtnBuyNow from "../components/gameInfo/BtnBuyNow";
 import Footer from "../components/Footer";
-import "../adaptive/1440px.css";
+import "../App.css";
 
 const GameInfo = () => {
   return (
