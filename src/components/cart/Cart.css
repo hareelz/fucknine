@@ -1,0 +1,45 @@
+.list-cart {
+  clip-path: polygon(10% 0%, 85% 0%, 90% 100%, 15% 100%);
+  border-radius: 50px;
+  background: url("https://www.freeiconspng.com/uploads/fire-png-image-photo-23.png");
+  background-size: cover;
+  background-color: #fff;
+}
+.cart-page {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://cdn-mk1.mortalkombat.com/purchase/purchase-page-bg-1600.jpg");
+
+  width: 100vw;
+}
+.cart-list {
+  margin-top: 15%;
+}
+
+.btn_cart {
+  color: #fff;
+  transition: 0.2s;
+  clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
+  border: none;
+  cursor: pointer;
+  width: 15em;
+  height: 4em;
+  margin-left: 35em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  font-size: 1em;
+
+  background: radial-gradient(
+    circle,
+    rgb(50, 98, 180) 0%,
+    rgb(17, 53, 139) 100%
+  );
+}
+.btn_cart:hover {
+  clip-path: polygon(3% 50%, 11% 0%, 89% 0%, 97% 50%, 89% 100%, 11% 100%);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}

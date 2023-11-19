@@ -3,11 +3,14 @@ import React, { useEffect, useState } from "react";
 import "../../index.css";
 import { useCards } from "../../contexts/CardContextProvider";
 import { useParams } from "react-router-dom";
+import CategorySelect from "./CategorySelect";
 
 const EditCard = () => {
-  const { getOneCard, oneCard, saveChanges } = useCards();
+  const { getOneCard, oneCard, saveChanges, categories, getCategories } =
+    useCards();
   const [card, setCard] = useState({
     title: "",
+    category: "",
     description: "",
     image: "",
     price: 0,
@@ -16,6 +19,7 @@ const EditCard = () => {
 
   useEffect(() => {
     getOneCard(id);
+    getCategories();
   }, []);
 
   useEffect(() => {
@@ -34,8 +38,8 @@ const EditCard = () => {
     }
   };
   return (
-    <div>
-      <Box sx={{ width: "50vw", margin: "200px auto" }}>
+    <div className="qwe">
+      <Box sx={{ width: "50vw", margin: "0 auto" }}>
         <Typography
           variant="h3"
           align="center"
@@ -52,6 +56,7 @@ const EditCard = () => {
           label="Title"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
         />
         <TextField
           value={card.description}
@@ -61,6 +66,7 @@ const EditCard = () => {
           label="Description"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
         />
         <TextField
           value={card.price}
@@ -71,6 +77,7 @@ const EditCard = () => {
           label="Price"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
         />
         <TextField
           value={card.image}
@@ -80,6 +87,12 @@ const EditCard = () => {
           label="Image URL"
           variant="outlined"
           className="admin-page-inp"
+          sx={{ mb: "15px" }}
+        />
+        <CategorySelect
+          card={card}
+          handleInput={handleInput}
+          categories={categories}
         />
         <button
           className="admin-page-btn"
