@@ -162,6 +162,10 @@ body {
 
 /* !======================================== */
 
+.wrapper-footer_block {
+  margin-top: 4.2em;
+}
+
 .footer-home_content {
   position: absolute;
   width: 80%;

@@ -15,12 +15,11 @@ s code {
 /* font-family: 'Roboto Slab', serif; */
 /* ! admin page */
 .admin-page {
-  margin-top: -5.4%;
   top: 0;
   background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
   background-size: cover;
   width: 100vw;
-  height: 101vh;
+  height: 100vh;
 }
 .qwe {
   position: absolute;
@@ -50,8 +49,8 @@ s code {
   cursor: pointer;
   font-family: "Roboto Slab", serif;
   width: 30%;
-  margin: 20px 16rem;
-  font-size: 20px;
+  margin: 2em 16rem;
+  font-size: 1em;
   padding: 15px;
   clip-path: polygon(0% 50%, 11% 0%, 89% 0%, 100% 50%, 89% 100%, 11% 100%);
   background: radial-gradient(
@@ -98,8 +97,7 @@ s code {
   );
 }
 .auth-page {
-  margin-top: -18.5%;
-  top: 0;
+  margin-top: -12.55em;
   background: url("https://prod-network-images.wbagora.com/network/account-wbgames-com/games/mortalkombat-com-mk1/mortalkombat-com-mk1-background.jpg");
   background-size: cover;
   width: 100vw;

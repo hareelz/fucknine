@@ -1,0 +1,539 @@
+.app {
+  max-width: 1440px;
+}
+.wrapper_home-page {
+  width: 100vw;
+}
+
+@media (max-width: 1440px) {
+  .app {
+    max-width: 1380px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .wrapper-block_kombat-pack {
+    margin-top: 29em;
+  }
+  .home-page_block__content {
+    width: 100vw;
+  }
+  .footer-home__block {
+    width: 100vw;
+  }
+  .home-page-content__fire-bot {
+    width: 97.5vw;
+    top: 31.4em;
+  }
+  .home-page-content__fire-top {
+    width: 100vw;
+    top: 57.4em;
+    left: -0.3em;
+  }
+
+  .wrapper-block_kombat-pack {
+    width: 100vw;
+  }
+  .wrapper-footer_block {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app {
+    max-width: 1000px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .home-page_block__content {
+    margin-top: -9em;
+  }
+
+  .home-page-content__fire-bot {
+    top: 23em;
+  }
+
+  .home-page-content__fire-top {
+    top: 43.5em;
+    right: 0;
+  }
+
+  .wrapper-block_kombat-pack {
+    margin-top: 0em;
+  }
+
+  .footer-home__block {
+    width: 98vw;
+    top: 77em;
+    margin: auto;
+  }
+
+  .wrapper-footer_block {
+    height: 50em;
+    margin-top: -5.4em;
+  }
+
+  .link-nav {
+    font-size: 0.7em;
+  }
+
+  .navbar_list {
+    margin-left: 12em;
+  }
+
+  .home-page-content__fire-top {
+    top: 43.4em;
+    right: 0;
+  }
+
+  .right-block_img {
+    width: 30%;
+    margin: auto;
+    margin-left: 37em;
+  }
+
+  .home-page_block__content {
+    height: 24em;
+  }
+  .wrapper-block_kombat-pack {
+    margin-top: 18em;
+  }
+
+  .kombat-pack-block_title {
+    font-size: 1.2em;
+  }
+
+  .kombat-pack-block_subtitle {
+    font-size: 2.4em;
+  }
+
+  .kombat-pack-block_desc {
+    width: 60%;
+  }
+
+  .kombat-pack-block_video-content {
+    top: 10em;
+    left: 45em;
+  }
+
+  .kombat-pack-block_content {
+    margin-top: 7em;
+    padding-left: 4em;
+  }
+
+  .logo_img {
+    margin: 0;
+    margin-left: 26.5em !important;
+  }
+
+  .logo_text {
+    margin-top: -2em;
+    margin-left: -12.5em;
+  }
+
+  .btn_buy-now {
+    margin-left: -11em;
+    margin-top: -3em;
+  }
+
+  .btn-buy-now__fire-top {
+    width: 100%;
+    position: absolute;
+    top: -4em;
+    left: 0.3em;
+  }
+  .footer-home__block {
+    width: 100vw;
+    top: 70em;
+    margin: auto;
+    height: 25em;
+  }
+
+  .wrapper-footer_block {
+    height: 50em;
+    margin-top: -5.5em;
+  }
+
+  .footer__fire-top-home {
+    width: 63.2em;
+    position: absolute;
+    mix-blend-mode: screen;
+    bottom: 31.5em;
+    left: -0.7em;
+  }
+
+  .logo_list {
+    padding: 0;
+  }
+
+  .footer-desc {
+    font-size: 0.7em;
+    text-align: center;
+    margin-right: 7em;
+    margin-top: 5em;
+  }
+
+  .footer-home_content {
+    left: 6em;
+    top: 23em;
+  }
+
+  .footer__fire-top-home {
+    bottom: 39.5em;
+  }
+
+  .footer-nome {
+    height: 50em;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    max-width: 680px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .navbar_list {
+    margin-top: 2em;
+    margin-left: 1em;
+    padding: 0;
+  }
+
+  .link-nav {
+    font-size: 0.6em;
+  }
+  .navbar_logo {
+    top: -0.5em;
+  }
+  .auth-btn {
+    height: 2em;
+    width: 6rem;
+    font-size: 0.8em;
+  }
+  .home-page_block__content {
+    height: 19em;
+  }
+  .home-page_block__content {
+    margin-top: -15em;
+  }
+  .home-page-content__fire-bot {
+    top: 17em;
+  }
+  .home-page-content__fire-top {
+    top: 33.3em;
+    right: 0;
+  }
+  .wrapper-block_kombat-pack {
+    margin-top: 15em;
+  }
+  .footer-home__block {
+    width: 100vw;
+    top: 55em;
+    margin: auto;
+    height: 20em;
+  }
+  .btn-buy-now__fire-top {
+    width: 100%;
+    position: absolute;
+    top: -8em;
+    left: 0.3em;
+  }
+  .footer__fire-top-home {
+    display: none;
+  }
+
+  .logo_img {
+    margin: 0;
+    margin-left: 19.5em !important;
+  }
+  .logo_text {
+    width: 30% !important;
+    margin-top: -7em;
+    margin-left: -18em;
+  }
+  .btn_buy-now {
+    font-size: 0.8em !important;
+    margin-left: -13em;
+    margin-top: -6em;
+    height: 3em;
+    padding: 0.5em !important;
+  }
+  .footer-home_content {
+    left: 6em;
+    top: 1em;
+  }
+  .footer-desc {
+    font-size: 0.5em;
+  }
+  .footer-wb-games-desc {
+    font-size: 0.7em;
+  }
+  .wrapper-footer_block {
+    height: 5em;
+    margin-top: -9.5em;
+  }
+
+  .left-block_content {
+    margin-top: 2em;
+  }
+  .left-block-title {
+    font-size: 1.5em;
+  }
+  .left-block-subtitle {
+    font-size: 0.9em;
+  }
+  .left-block-desc {
+    font-size: 0.8em;
+  }
+  .right-block_img {
+    margin-left: 30em;
+  }
+  /* 1----------------------------- */
+  .kombat-pack__block {
+    position: absolute;
+    left: 2em !important;
+    top: -18em;
+    width: 18em;
+    height: 8em;
+    margin: auto;
+    clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+  }
+  .wrapper-block_content {
+    position: absolute;
+    top: 31em;
+    left: 0em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5em;
+  }
+  .main-block__desc {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  .main-block__title {
+    font-size: 1em;
+  }
+  .desc__heroes {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .title__name-heroes {
+    font-size: 0.9em;
+    word-spacing: -0.2em;
+    color: #ffecc5;
+  }
+  .game-info__main-block {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 767px) {
+  .app {
+    max-width: none;
+    height: 100vh;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-left: 21em;
+  }
+
+  .footer-home {
+    position: relative;
+    width: 100%;
+    height: 23em;
+    background-color: #0e1a2d;
+    top: 1em;
+    z-index: -1;
+  }
+  .navbar_list {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .home-page_block__content {
+    display: flex;
+    flex-direction: column;
+    clip-path: none;
+  }
+
+  .footer-home__block {
+    clip-path: none;
+    margin-top: -15em;
+  }
+  .home-page-content__fire-bot,
+  .home-page-content__fire-top,
+  .btn-buy-now__fire-top {
+    display: none;
+  }
+  .left-block-title {
+    font-size: 1em;
+  }
+  .left-block-subtitle {
+    font-size: 0.6em;
+  }
+  .left-block-desc {
+    font-size: 0.5em;
+  }
+  .left-block_content {
+    padding: 0;
+    margin-top: 2em;
+    margin-left: 4em;
+  }
+  .right-block_img {
+    width: 60%;
+    margin-left: 5.5em;
+    margin-top: -2em;
+  }
+  .home-page_block__content {
+    margin-top: -21em;
+  }
+  .wrapper-block_kombat-pack {
+    margin-top: 12em;
+  }
+  .wrapper-footer_block {
+    height: 5em;
+    margin-top: -4.5em;
+  }
+  .kombat-pack-block_title {
+    font-size: 0.6em;
+  }
+  .kombat-pack-block_subtitle {
+    font-size: 0.9em;
+  }
+  .kombat-pack-block_desc {
+    font-size: 0.6em;
+  }
+  .kombat-pack-block_desc-name {
+    font-size: 0.5em;
+  }
+  .kombat-pack-block_content {
+    margin-top: 2em;
+    padding-left: 2em;
+  }
+  .kombat-pack-block_video-content {
+    top: 8em;
+    left: 1em;
+  }
+  .logo_text {
+    width: 40% !important;
+    margin-top: -5em;
+    margin-left: -26em;
+  }
+  .logo_img {
+    width: 40% !important;
+    margin: 0;
+    margin-left: 8.5em !important;
+  }
+  .btn_buy-now {
+    font-size: 0.8em !important;
+    margin-left: -28.5em;
+    margin-top: -4em;
+    height: 3em;
+    padding: 0.5em !important;
+    width: 40% !important;
+  }
+  .wrapper-footer_block {
+    height: 5em;
+    margin-top: -17.5em;
+  }
+  .footer-home_content {
+    left: 0;
+    top: 1em;
+  }
+
+  .logo_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2.5em;
+    margin-top: 2em;
+  }
+
+  .logo_item {
+    width: 3em;
+
+    margin-left: 0em;
+  }
+
+  .logo_item:nth-child(2) {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .logo_item:nth-child(3) {
+    width: 10em;
+    margin-top: 1em;
+    margin-left: 2em;
+  }
+  .logo_item:nth-child(4) {
+    width: 10em;
+    margin: 1em;
+    margin-left: -1em;
+  }
+  .footer-desc {
+    font-size: 0.3em;
+    width: 100%;
+    margin-left: 9em;
+  }
+  .footer-wb-games-desc {
+    font-size: 0.2em;
+    text-align: center;
+    margin-left: 11em;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .burger-menu {
+    display: block;
+    margin-left: 19em;
+  }
+
+  .home-page_block__content {
+    margin-top: -23em;
+  }
+  .kombat-pack-block_video-content {
+    top: 5em;
+    left: 17em;
+  }
+  .footer-home__block {
+    clip-path: none;
+    margin-top: -17em;
+  }
+  .wrapper-block_kombat-pack {
+    margin-top: 12em;
+  }
+  .game-info_block__content {
+    display: none;
+  }
+  .logo_text {
+    width: 40% !important;
+    margin-top: -5em;
+    margin-left: -27em;
+  }
+  .logo_img {
+    width: 40% !important;
+    margin: 0;
+    margin-left: 7.5em !important;
+  }
+  .btn_buy-now {
+    margin-left: -30.5em;
+    margin-top: -4em;
+  }
+  .footer-home {
+    top: -3em;
+  }
+  .logo_item {
+    width: 3em;
+    margin-left: -1em;
+  }
+}

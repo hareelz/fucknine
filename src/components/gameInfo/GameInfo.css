@@ -439,18 +439,13 @@ p {
   position: absolute;
   width: 20em;
   z-index: 2;
-  top: 10em;
+  top: 14em;
+  left: 35.5em;
 }
 
 .logo_img {
   width: 20%;
-  margin-left: 1.5em;
-}
-
-.logo_block {
-  width: 100%;
-  position: relative;
-  margin-left: 30em;
+  margin-left: 36.5em;
   margin-top: 2em;
 }
 
@@ -462,7 +457,9 @@ p {
   border: none;
   cursor: pointer;
   width: 12%;
-  margin: 2em 0 0 35rem;
+  top: 22em;
+  left: 40em;
+  position: absolute;
   font-size: 1em;
   padding: 15px;
   background: radial-gradient(
