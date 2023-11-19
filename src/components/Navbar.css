@@ -20,7 +20,8 @@ li {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  margin-left: 15em;
+  margin-left: 19em;
+  margin-top: 24px;
 }
 
 .nav-bcg {
@@ -31,7 +32,7 @@ li {
 }
 
 .nav-list-item {
-  width: 50%;
+  width: 13%;
   display: flex;
   font-size: 1em;
 }

@@ -160,8 +160,8 @@ p {
 
 .content_block__fire-top {
   position: absolute;
-  width: 100%;
-  margin: 24.4em 0 0 -0.3em;
+  width: 101vw;
+  margin: 23.9em 0 0 -0.3em;
   mix-blend-mode: screen;
   z-index: 4;
 }

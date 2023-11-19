@@ -9,9 +9,9 @@ const Content = () => {
           <video
             className="home-page-content__fire-bot"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-bot-loop.mp4"
-            // autoPlay
+            autoPlay
             loop
-            // muted
+            muted
             playsInline
           ></video>
         </div>
@@ -50,9 +50,9 @@ const Content = () => {
           <video
             className="home-page-content__fire-top"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4"
-            // autoPlay
+            autoPlay
             loop
-            // muted
+            muted
             playsInline
           ></video>
         </div>

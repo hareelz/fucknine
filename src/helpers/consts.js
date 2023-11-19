@@ -14,4 +14,4 @@ export const ACTIONS_USER = {
   CHECK_USER: "CHECK_USER",
 };
 
-export const ADMIN = "syimyk@admin.com";
+export const ADMIN = "admin@admin.com";

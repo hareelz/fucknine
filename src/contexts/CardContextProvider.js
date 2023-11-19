@@ -55,7 +55,7 @@ const CardContextProvider = ({ children }) => {
 
   const saveChanges = async (id, editedCard) => {
     await axios.patch(`${API}/${id}`, editedCard);
-    navigate("/card");
+    navigate("/cardPage");
   };
 
   const getCategories = async () => {

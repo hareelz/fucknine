@@ -8,9 +8,9 @@ const GameInfoContent = () => {
           <video
             className="content_block__fire-bot"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-bot-loop.mp4"
-            // autoPlay
+            autoPlay
             loop
-            // muted
+            muted
             playsInline
           ></video>
         </div>
@@ -32,14 +32,14 @@ const GameInfoContent = () => {
         </div>
 
         <div className="fire-block-2">
-          {/* <video
+          <video
             className="content_block__fire-top"
             src="https://cdn-mk1.mortalkombat.com/static/fire-line-top-loop.mp4"
-            // autoPlay
+            autoPlay
             loop
-            // muted
+            muted
             playsInline
-          ></video> */}
+          ></video>
         </div>
       </div>
     </div>
